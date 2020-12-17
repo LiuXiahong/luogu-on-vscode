@@ -17,19 +17,29 @@ function activate(context) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('luogu-on-vscode.helloWorld', function () {
+	let helloWorld = vscode.commands.registerCommand('luogu-on-vscode.helloWorld', function () {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from luogu-on-vscode!');
+
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(helloWorld);
 }
 exports.activate = activate;
+function get() {
+	const request = require('request');
+	request('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', { json: true }, (err, res,
+		body) => {
+		if (err) { return console.log(err); }
+		console.log(body.url);
+		console.log(body.explanation);
+	});
+}
 
 // this method is called when your extension is deactivated
-function deactivate() {}
+function deactivate() { }
 
 module.exports = {
 	activate,
