@@ -22,7 +22,7 @@ function activate(context) {
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from luogu-on-vscode!');
-
+		get();
 	});
 
 	context.subscriptions.push(helloWorld);
