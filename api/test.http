@@ -1,2 +1,6 @@
+@luogu=https://www.luogu.com.cn
 ###
 GET https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
+###
+GET {{luogu}}
