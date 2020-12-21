@@ -22,19 +22,38 @@ function activate(context) {
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from luogu-on-vscode!');
-		get();
+		getLuoguApi('https://www.luogu.com.cn/problem/list?_contentOnly');
 	});
+	let showranking = vscode.commands.registerCommand('luogu-on-vscode.showranking', function () {
+		// The code you place here will be executed every time your command is executed
 
+		// Display a message box to the user
+		arr = [{
+			label: 'first',
+			description: 'first item',
+			detail: 'first item details'
+		}, {
+			label: 'second',
+			description: 'second item',
+			detail: 'second item details'
+		}];
+		a=getLuoguApi('https://www.luogu.com.cn/ranking?_contentOnly');
+		// var b=alert(a.currentData.rankList.result);
+		vscode.window.showQuickPick(arr).then(value => {
+			vscode.window.showInformationMessage('User choose ' + value.label);
+		})
+	});
 	context.subscriptions.push(helloWorld);
+	context.subscriptions.push(showranking);
 }
 exports.activate = activate;
-function get() {
+function getLuoguApi(url) {
 	const request = require('request');
-	request('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', { json: true }, (err, res,
+	request(url, { json: true }, (err, res,
 		body) => {
 		if (err) { return console.log(err); }
-		console.log(body.url);
-		console.log(body.explanation);
+		console.log(body);
+		return body;
 	});
 }
 

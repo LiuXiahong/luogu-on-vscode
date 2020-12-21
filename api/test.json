@@ -1,0 +1,964 @@
+{
+    "code": 200,
+    "currentTemplate": "RankList",
+    "currentData": {
+        "rankList": {
+            "result": [
+                {
+                    "contestRating": 100,
+                    "socialRating": 100,
+                    "practiceRating": 71,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607274097,
+                    "user": {
+                        "uid": 42156,
+                        "name": "Fee_cle6418",
+                        "slogan": "I am such a nit",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 431
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 62,
+                    "practiceRating": 81,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1608484095,
+                    "user": {
+                        "uid": 221955,
+                        "name": "panyf",
+                        "slogan": "\u9047\u5230\u56f0\u96be\u7761\u5927\u89c9",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 428
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 73,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1607274060,
+                    "user": {
+                        "uid": 30036,
+                        "name": "Soulist",
+                        "slogan": "\u73b0\u5728\u7684\u6bcf\u4e00\u6b65\u90fd\u51b3\u5b9a\u7740\u6700\u540e\u7684\u7ed3\u5c40\uff0c\u6211\u8fc8\u5411\u7684\u662f\u81ea\u5df1\u9009\u5b9a\u7684\u7ec8\u70b9",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 428
+                },
+                {
+                    "contestRating": 91,
+                    "socialRating": 71,
+                    "practiceRating": 73,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1608483816,
+                    "user": {
+                        "uid": 96912,
+                        "name": "AzusaCat",
+                        "slogan": "\u8bf7\u522b\u8ba9\u6cea\u6ef4 \u843d\u4e0b \u5927\u5bb6\u90fd\u6ca1\u5e26\u4f1e\u5462",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 420
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 89,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483871,
+                    "user": {
+                        "uid": 118365,
+                        "name": "George1123",
+                        "slogan": "Booming zero is my fate!",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 419
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 87,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483850,
+                    "user": {
+                        "uid": 111055,
+                        "name": "dead_X",
+                        "slogan": "\u5c31\u5f53\u6211\u4ece\u672a\u6765\u8fc7\u3002",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 417
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 87,
+                    "practiceRating": 68,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483676,
+                    "user": {
+                        "uid": 41476,
+                        "name": "Fee_cl\u04356418",
+                        "slogan": "I am such a nit",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 415
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 84,
+                    "practiceRating": 70,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607878931,
+                    "user": {
+                        "uid": 60990,
+                        "name": "Karry5307",
+                        "slogan": "\u5144\u5f1f\u4f1a\u80cc\u53db\u4f60\uff0c\u5973\u4eba\u4f1a\u79bb\u5f00\u4f60\uff0c\u91d1\u94b1\u4f1a\u8bf1\u60d1\u4f60\uff0c\u751f\u6d3b\u4f1a\u5201\u96be\u4f60\uff0c\u53ea\u6709\u6570\u5b66\u4e0d\u4f1a\uff0c\u4e0d\u4f1a\u5c31\u662f\u4e0d\u4f1a\uff0c\u600e\u4e48\u5b66\u90fd\u4e0d\u4f1a",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 414
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 82,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607878944,
+                    "user": {
+                        "uid": 66511,
+                        "name": "DPair",
+                        "slogan": "Duel!",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 412
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 75,
+                    "practiceRating": 75,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607274592,
+                    "user": {
+                        "uid": 220037,
+                        "name": "w33z8kqrqk8zzzx33",
+                        "slogan": "\u53cd\u5bf9\u5e73\u8861\u6811\u66b4\u653f\uff0c\u6d1b\u8c37\u5c5e\u4e8e\u5757\u72b6\u94fe\u8868",
+                        "badge": "",
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 410
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 74,
+                    "practiceRating": 50,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1608483873,
+                    "user": {
+                        "uid": 119261,
+                        "name": "Inf_Voltage",
+                        "slogan": "N\/A",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 409
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 57,
+                    "practiceRating": 92,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607879253,
+                    "user": {
+                        "uid": 203968,
+                        "name": "FrenkiedeJong21",
+                        "slogan": "Barca's DNA",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 409
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 72,
+                    "practiceRating": 75,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608484016,
+                    "user": {
+                        "uid": 184977,
+                        "name": "SyadouHayami",
+                        "slogan": "I will put them aside.",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 0
+                    },
+                    "rating": 407
+                },
+                {
+                    "contestRating": 98,
+                    "socialRating": 73,
+                    "practiceRating": 51,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1608483649,
+                    "user": {
+                        "uid": 29826,
+                        "name": "SSerxhs",
+                        "slogan": "\u8fd9\u4e2a\u5bb6\u4f19\u5f88\u83dc\uff0c\u4ec0\u4e48\u4e5f\u6ca1\u6709\u7559\u4e0b",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 407
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 77,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607274127,
+                    "user": {
+                        "uid": 51376,
+                        "name": "MicroMaker",
+                        "slogan": "\u82df\u5229\u56fd\u5bb6\u751f\u6b7b\u4ee5\uff0c\u5c82\u56e0\u7978\u798f\u907f\u8d8b\u4e4b",
+                        "badge": "",
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 407
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 75,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483756,
+                    "user": {
+                        "uid": 71491,
+                        "name": "shenmadongdong",
+                        "slogan": "\u6b64\u4eba\u5df2\u6b7b\uff0c\u6709\u4e8b\u70e7\u7eb8",
+                        "badge": "",
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 405
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 75,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483661,
+                    "user": {
+                        "uid": 35137,
+                        "name": "a___",
+                        "slogan": "\u8fd9\u4e2a\u5bb6\u4f19\u5f88\u84bb\uff0c\u4ec0\u4e48\u4e5f\u6ca1\u6709\u7559\u4e0bqwq",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 405
+                },
+                {
+                    "contestRating": 95,
+                    "socialRating": 67,
+                    "practiceRating": 78,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608484327,
+                    "user": {
+                        "uid": 305262,
+                        "name": "Su_Zipei",
+                        "slogan": "",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 400
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 54,
+                    "practiceRating": 86,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607879087,
+                    "user": {
+                        "uid": 123384,
+                        "name": "tommy0221",
+                        "slogan": "\u5728AFO\u7684\u8fb9\u7f18\u6e38\u8d70",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 400
+                },
+                {
+                    "contestRating": 92,
+                    "socialRating": 70,
+                    "practiceRating": 77,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607879290,
+                    "user": {
+                        "uid": 220285,
+                        "name": "Saber_Master",
+                        "slogan": "\u4e14\u5c06\u65b0\u706b\u8bd5\u65b0\u8336\uff0c\u8bd7\u9152\u8d81\u5e74\u534e\u3002",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 399
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 64,
+                    "practiceRating": 73,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483790,
+                    "user": {
+                        "uid": 86625,
+                        "name": "Limit",
+                        "slogan": "Alive.",
+                        "badge": "",
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 397
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 77,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1607879452,
+                    "user": {
+                        "uid": 280015,
+                        "name": "Star_Cried",
+                        "slogan": "Nothing is true.Everything is permitted.",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 397
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 66,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483731,
+                    "user": {
+                        "uid": 61120,
+                        "name": "QwQcOrZ",
+                        "slogan": "\u5370\u5237\u6210\u6587\u4e0d\u80fd\u4ee3\u8868\u5b83\u4eec\u5c31\u662f\u771f\u7406\u3002",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 396
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 75,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1607274188,
+                    "user": {
+                        "uid": 68011,
+                        "name": "ypcaeh",
+                        "slogan": "\u5fc3\u7075\u63a7\u5236~",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 395
+                },
+                {
+                    "contestRating": 82,
+                    "socialRating": 70,
+                    "practiceRating": 80,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607274286,
+                    "user": {
+                        "uid": 101984,
+                        "name": "Rui_R",
+                        "slogan": "El Psy Congroo.",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 392
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 57,
+                    "practiceRating": 47,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1607878837,
+                    "user": {
+                        "uid": 22136,
+                        "name": "qwaszx",
+                        "slogan": "\u6211\u4e0d\u60f3\u5c31\u8fd9\u6837\u6ca6\u9677\/\u8ff7\u5931\u5728\u9ed1\u591c\/\u6211\u5c06\u71c3\u70e7\u8fd9\u751f\u547d\/\u5c31\u7b97\u518d\u58ee\u70c8",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 389
+                },
+                {
+                    "contestRating": 85,
+                    "socialRating": 74,
+                    "practiceRating": 68,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483922,
+                    "user": {
+                        "uid": 141179,
+                        "name": "pigstd",
+                        "slogan": "I have a dream.",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 387
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 67,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1608483878,
+                    "user": {
+                        "uid": 120911,
+                        "name": "LYC_music",
+                        "slogan": "LYC\u662f\u849f\u84bb",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 387
+                },
+                {
+                    "contestRating": 93,
+                    "socialRating": 70,
+                    "practiceRating": 64,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483851,
+                    "user": {
+                        "uid": 111728,
+                        "name": "\u5e7b\u5f71\u661f\u575a\u5f3a",
+                        "slogan": "\u4e3a\u4ec0\u4e48\u86c7\u4e0d\u80fd\u5403\u81ea\u5df1\uff08\uff09",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 387
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 57,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607879014,
+                    "user": {
+                        "uid": 96580,
+                        "name": "Isaunoya",
+                        "slogan": "whker",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 0
+                    },
+                    "rating": 387
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 38,
+                    "practiceRating": 60,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1608483824,
+                    "user": {
+                        "uid": 100285,
+                        "name": "Froggy",
+                        "slogan": "\u5471\u5471\u5471!",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 383
+                },
+                {
+                    "contestRating": 76,
+                    "socialRating": 70,
+                    "practiceRating": 75,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608484363,
+                    "user": {
+                        "uid": 316322,
+                        "name": "hzoi_liuchang",
+                        "slogan": "\u5343\u6dd8\u4e07\u6f09\u867d\u8f9b\u82e6\uff0c\u5439\u5c3d\u72c2\u6c99\u59cb\u5230\u91d1\u3002",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 381
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 64,
+                    "practiceRating": 65,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1608483830,
+                    "user": {
+                        "uid": 103023,
+                        "name": "e_e_thinker",
+                        "slogan": "\u8fd9\u4e2a\u5bb6\u4f19\u592a\u5f31\uff0c\u4ec0\u4e48\u90fd\u6ca1\u6709\u7559\u4e0b",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 379
+                },
+                {
+                    "contestRating": 84,
+                    "socialRating": 70,
+                    "practiceRating": 65,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483738,
+                    "user": {
+                        "uid": 64456,
+                        "name": "colazcy",
+                        "slogan": "\u4e3a\u4e86\u90a3\u4e2a\u68a6\u6211\u4eec\u626c\u5e06\u8d77\u822a\uff0c\u4e3a\u4e86\u7406\u6240\u5230\u6765\u7684\u90a3\u5929\u8de8\u8d8a\u65e0\u5c3d\u9ed1\u591c",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 379
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 65,
+                    "practiceRating": 52,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483713,
+                    "user": {
+                        "uid": 55078,
+                        "name": "YLWang",
+                        "slogan": "\u3000",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 377
+                },
+                {
+                    "contestRating": 97,
+                    "socialRating": 52,
+                    "practiceRating": 67,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607879302,
+                    "user": {
+                        "uid": 224229,
+                        "name": "Caicz",
+                        "slogan": "\u7ed9\u81ea\u6211\u4ee5\u5f3a\u5236\u529b",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 376
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 60,
+                    "practiceRating": 30,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1608483704,
+                    "user": {
+                        "uid": 52518,
+                        "name": "s_r_f",
+                        "slogan": "\u8fd9\u91cc\u662f\u4e00\u4e2a\u53ea\u4f1a\u80cc\u677f\u548cfst\u7684\u849f\u84bb",
+                        "badge": "NOI RP++",
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 375
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 29,
+                    "practiceRating": 85,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483946,
+                    "user": {
+                        "uid": 151935,
+                        "name": "Rainbow_sjy\u2764OI",
+                        "slogan": "\u6587\u5316\u8bfe\u9009\u624b",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 374
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 70,
+                    "practiceRating": 44,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1607274431,
+                    "user": {
+                        "uid": 151475,
+                        "name": "\u4e5d\u4e5d\u4e5d\u4e5d",
+                        "slogan": "\u4e5f\u8bb8\u300c\u6211\u300d \u6216\u8005\u300c\u6211\u4eec\u300d\uff0c\u7ec8\u6709\u4e00\u5929\u80fd\u81ea\u7531\u5730\u751f\u5b58\u7740",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 374
+                },
+                {
+                    "contestRating": 87,
+                    "socialRating": 63,
+                    "practiceRating": 63,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483859,
+                    "user": {
+                        "uid": 114409,
+                        "name": "00ffcc",
+                        "slogan": "\u6700\u4f4e\u306a\u4eba\u751f\u3067\u7b80\u5358\u306b\u7ec8\u308f\u308b\u3093\u3060",
+                        "badge": "",
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 373
+                },
+                {
+                    "contestRating": 79,
+                    "socialRating": 70,
+                    "practiceRating": 74,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1607879114,
+                    "user": {
+                        "uid": 135839,
+                        "name": "Fairicle",
+                        "slogan": "Think twice,code once.|JXOI rp++|\u60f3\u5b66\u597d\u7ec4\u5408\u6570\u5b66",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 373
+                },
+                {
+                    "contestRating": 96,
+                    "socialRating": 71,
+                    "practiceRating": 55,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1608484092,
+                    "user": {
+                        "uid": 220857,
+                        "name": "\u7d20\u8d28\u73a9\u5bb6\u5b591\u8d85",
+                        "slogan": "\u5929\u9053\u916c\u52e4\uff01",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 372
+                },
+                {
+                    "contestRating": 82,
+                    "socialRating": 70,
+                    "practiceRating": 60,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483752,
+                    "user": {
+                        "uid": 70132,
+                        "name": "\u6211\u77e5\u9053\u4e86\u738b\u5b50",
+                        "slogan": "\u6ca1\u6709\u53c2\u52a0\u7701\u9009\u8d44\u683c\u5c31\u4e0d\u6539\u4e2a\u6027\u7b7e\u540d\u3002",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 372
+                },
+                {
+                    "contestRating": 99,
+                    "socialRating": 48,
+                    "practiceRating": 40,
+                    "basicRating": 100,
+                    "prizeRating": 85,
+                    "calculateTime": 1608483617,
+                    "user": {
+                        "uid": 7480,
+                        "name": "skydogli",
+                        "slogan": "\u4e00\u4e2a\u4eba\u7684\u547d\u8fd0\u554a,\u5f53\u7136\u8981\u9760\u81ea\u6211\u594b\u6597,\u4f46\u4e5f\u8981\u8003\u8651\u5230\u5386\u53f2\u7684\u8fdb\u7a0b",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 9
+                    },
+                    "rating": 372
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 99,
+                    "practiceRating": 73,
+                    "basicRating": 100,
+                    "prizeRating": 0,
+                    "calculateTime": 1607878869,
+                    "user": {
+                        "uid": 38370,
+                        "name": "M_se\u0430",
+                        "slogan": "Wake Up",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 0
+                    },
+                    "rating": 372
+                },
+                {
+                    "contestRating": 85,
+                    "socialRating": 71,
+                    "practiceRating": 65,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1608483893,
+                    "user": {
+                        "uid": 127284,
+                        "name": "\u6211\u8c14\u8c14",
+                        "slogan": "\/kk",
+                        "badge": "",
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 371
+                },
+                {
+                    "contestRating": 70,
+                    "socialRating": 70,
+                    "practiceRating": 70,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608484045,
+                    "user": {
+                        "uid": 199750,
+                        "name": "\u8bd5\u8bd5\u4e8b\u5b9e\u4e0a\u5417",
+                        "slogan": "\u5c4f\u5e55\u5728\u6df1\u591c\u5fae\u5fae\u53d1\u4eae\uff0c\u6211\u5fc3\u5728\u8fdc\u65b9",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 370
+                },
+                {
+                    "contestRating": 99,
+                    "socialRating": 66,
+                    "practiceRating": 44,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483760,
+                    "user": {
+                        "uid": 73231,
+                        "name": "eee_hoho",
+                        "slogan": "K-on\uff01",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 369
+                },
+                {
+                    "contestRating": 100,
+                    "socialRating": 26,
+                    "practiceRating": 83,
+                    "basicRating": 100,
+                    "prizeRating": 60,
+                    "calculateTime": 1608483657,
+                    "user": {
+                        "uid": 33362,
+                        "name": "2016wudi",
+                        "slogan": "\u6700\u5b64\u72ec\u7684\u4eba\u6700\u4eb2\u5207\uff0c\u53d7\u8fc7\u4f24\u7684\u4eba\u603b\u662f\u7b11\u7684\u6700\u707f\u70c2\u3002",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 7
+                    },
+                    "rating": 369
+                },
+                {
+                    "contestRating": 60,
+                    "socialRating": 70,
+                    "practiceRating": 88,
+                    "basicRating": 100,
+                    "prizeRating": 50,
+                    "calculateTime": 1608484103,
+                    "user": {
+                        "uid": 224403,
+                        "name": "\u6728xx\u6728\u5927",
+                        "slogan": "",
+                        "badge": null,
+                        "isAdmin": false,
+                        "isBanned": false,
+                        "color": "Red",
+                        "ccfLevel": 6
+                    },
+                    "rating": 368
+                }
+            ],
+            "perPage": 50,
+            "count": 500
+        }
+    },
+    "currentTitle": "\u5495\u503c\u6392\u540d",
+    "currentTheme": null
+}
