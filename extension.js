@@ -8,6 +8,8 @@ const vscode = require('vscode');
 /**
  * @param {vscode.ExtensionContext} context
  */
+var pass_json;
+
 function activate(context) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
@@ -22,13 +24,12 @@ function activate(context) {
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from luogu-on-vscode!');
-		getLuoguApi('https://www.luogu.com.cn/problem/list?_contentOnly');
 	});
 	let showranking = vscode.commands.registerCommand('luogu-on-vscode.showranking', function () {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		arr = [{
+		var arr = [{
 			label: 'first',
 			description: 'first item',
 			detail: 'first item details'
@@ -37,8 +38,7 @@ function activate(context) {
 			description: 'second item',
 			detail: 'second item details'
 		}];
-		a=getLuoguApi('https://www.luogu.com.cn/ranking?_contentOnly');
-		// var b=alert(a.currentData.rankList.result);
+		getLuoguApi('https://www.luogu.com.cn/problem/list?_contentOnly');
 		vscode.window.showQuickPick(arr).then(value => {
 			vscode.window.showInformationMessage('User choose ' + value.label);
 		})
@@ -46,17 +46,20 @@ function activate(context) {
 	context.subscriptions.push(helloWorld);
 	context.subscriptions.push(showranking);
 }
+
 exports.activate = activate;
+
+var fs = require('fs');
 function getLuoguApi(url) {
 	const request = require('request');
 	request(url, { json: true }, (err, res,
 		body) => {
 		if (err) { return console.log(err); }
-		console.log(body);
-		return body;
+		console.log(body.code);
+		// console.log(body);
+		// return body;
 	});
 }
-
 // this method is called when your extension is deactivated
 function deactivate() { }
 

@@ -90,7 +90,7 @@
                     "user": {
                         "uid": 118365,
                         "name": "George1123",
-                        "slogan": "Booming zero is my fate!",
+                        "slogan": "\u4e00\u4e2a AFO \u60ac\u9996",
                         "badge": null,
                         "isAdmin": false,
                         "isBanned": false,
@@ -508,7 +508,7 @@
                     "user": {
                         "uid": 141179,
                         "name": "pigstd",
-                        "slogan": "I have a dream.",
+                        "slogan": "\u4e16\u4e0a\u7684\u9c9c\u82b1\u4f1a\u76f8\u7ee7\u76db\u5f00,\u58ee\u4e3d\u800c\u4e0d\u673d\u7684\u4e8b\u7269\u4f1a\u63a5\u8e35\u800c\u6765\u3002",
                         "badge": null,
                         "isAdmin": false,
                         "isBanned": false,
@@ -850,7 +850,7 @@
                     "user": {
                         "uid": 38370,
                         "name": "M_se\u0430",
-                        "slogan": "Wake Up",
+                        "slogan": "?",
                         "badge": null,
                         "isAdmin": false,
                         "isBanned": false,
