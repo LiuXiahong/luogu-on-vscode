@@ -21,7 +21,7 @@
 				"title": "Hello World"
 			},
 			{
-				"command":"luogu-on-vscode.showranking",
+				"command": "luogu-on-vscode.showranking",
 				"title": "Show Ranking"
 			}
 		]
@@ -43,6 +43,7 @@
 		"vscode-test": "^1.4.1"
 	},
 	"dependencies": {
+		"axios": "^0.21.1",
 		"request": "^2.88.2"
 	}
 }
