@@ -34,40 +34,12 @@ function activate(context) {
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from luogu-on-vscode!');
-		// var a = {};
-		// getLuoguApi('https://www.luogu.com.cn/ranking?_contentOnly').then(result => {
-		// 	a = result
-		// 	// console.log(result) // 这里拿到返回值
-		// });
-		// setTimeout(function () { console.log(a) }, 3000);
 	});
 	let showranking = vscode.commands.registerCommand('luogu-on-vscode.showranking', function () {
 		// The code you place here will be executed every time your command is executed
 
-		// var arr = [];
-		// var url = 'https://www.luogu.com.cn/ranking?_contentOnly';
-		// var body = getLuoguApi(url);
-		// console.log(body);
-		// var ranking = body.currentData.rankList.result;
-		// for (var i = 0, len = ranking.length; i < len; i++) {
-		// 	var t = {};
-		// 	t.label = ranking[i].user.name;
-		// 	t.description = ranking[i].user.slogan;
-		// 	t.detail = String(ranking[i].contestRating + ' ' + ranking[i].socialRating + ' ' + ranking[i].practiceRating + ' ' + ranking[i].basicRating + ' ' + ranking[i].prizeRating);
-		// 	arr.push(t);
-		// }
-		// console.log(arr.length);
-		// vscode.window.showQuickPick(arr, {
-		// 	canPickMany: false,
-		// 	ignoreFocusOut: true,
-		// 	matchOnDescription: true,
-		// 	matchOnDetail: true,
-		// 	placeHolder: body.currentTitle
-		// }).then(value => {
-		// 	vscode.window.showInformationMessage("看看人家" + value.label + ",再看看你自己！");
-		// })
 		var arr = [];
-		for (var k = 1; k <= 2; k++) {
+		for (var k = 2; k >= 1; k--) {
 			var body = {};
 			getLuoguApi('https://www.luogu.com.cn/ranking?_contentOnly&page=' + k).then(result => {
 				body = result;
@@ -91,12 +63,35 @@ function activate(context) {
 					matchOnDetail: true,
 					placeHolder: body.currentTitle
 				}).then(value => {
-					vscode.window.showInformationMessage("看看人家" + value.label + ",再看看你自己！");
+					vscode.window.showInformationMessage("看看人家" + value.label + ",再看看你自己！",'是','否').then(result =>{
+						if(result=='是')
+						{
+							exec(`open 'https://haoji.me'`);
+						}
+					});
 				})
 		}, 5000);
 	});
+	let search = vscode.commands.registerCommand('luogu-on-vscode.search', function () {
+		vscode.window.showQuickPick(["题目","题单","比赛","用户"]).then(value =>{
+			if(value=="题目"){
+
+			}
+			if(value=="题单"){
+				
+			}
+			if(value=="比赛"){
+				
+			}
+			if(value=="用户"){
+				
+			}
+		})
+		
+	});
 	context.subscriptions.push(helloWorld);
 	context.subscriptions.push(showranking);
+	context.subscriptions.push(search);
 }
 
 exports.activate = activate;

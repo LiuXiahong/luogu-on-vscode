@@ -8,3 +8,7 @@ GET {{luogu}}/problem/list
 ###
 GET {{luogu}}/ranking
 ?_contentOnly
+###
+GET {{luogu}}/contest/list
+?_contentOnly
+&page=1

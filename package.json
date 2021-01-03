@@ -11,7 +11,9 @@
 	],
 	"activationEvents": [
 		"onCommand:luogu-on-vscode.helloWorld",
-		"onCommand:luogu-on-vscode.showranking"
+		"onCommand:luogu-on-vscode.showranking",
+		"onCommand:luogu-on-vscode.search"
+		
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -23,8 +25,41 @@
 			{
 				"command": "luogu-on-vscode.showranking",
 				"title": "Show Ranking"
+			},
+			{
+				"command": "luogu-on-vscode.search",
+				"title": "洛谷：搜索"
 			}
-		]
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "luogu",
+					"title": "洛谷",
+					"icon": "./calendar.svg"
+				}
+			]
+		},
+		"views": {
+			"luogu": [
+				{
+					"id": "luogu.views.program",
+					"name": "题目"
+				},
+				{
+					"id": "luogu.views.problem-sets",
+					"name": "题单"
+				},
+				{
+					"id": "luogu.views.contests",
+					"name": "比赛"
+				},
+				{
+					"id": "luogu.views.discussions",
+					"name": "讨论"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"lint": "eslint .",
