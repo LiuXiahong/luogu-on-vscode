@@ -10,25 +10,26 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:luogu-on-vscode.helloWorld",
-		"onCommand:luogu-on-vscode.showranking",
-		"onCommand:luogu-on-vscode.search"
-		
+		"*"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "luogu-on-vscode.helloWorld",
-				"title": "Hello World"
-			},
-			{
 				"command": "luogu-on-vscode.showranking",
-				"title": "Show Ranking"
+				"title": "luogu: Show Ranking"
 			},
 			{
 				"command": "luogu-on-vscode.search",
-				"title": "洛谷：搜索"
+				"title": "luogu: Search"
+			},
+			{
+				"command": "luogu-on-vscode.start",
+				"title": "luogu: Start"
+			},
+			{
+				"command": "luogu-on-vscode.searchproblem",
+				"title": "luogu: Search Problem"
 			}
 		],
 		"viewsContainers": {
@@ -59,6 +60,17 @@
 					"name": "讨论"
 				}
 			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Luogu插件",
+			"properties": {
+				"luogu-on-vscode.rankingListPageNumber": {
+					"type": "number",
+					"default": "2",
+					"description": "洛谷咕值排名展示页数"
+				}
+			}
 		}
 	},
 	"scripts": {

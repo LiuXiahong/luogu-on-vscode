@@ -4,11 +4,24 @@ GET https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
 ###
 GET {{luogu}}/problem/list
-?_contentOnly
+?keyword=太远
+&page=1
+&_contentOnly
 ###
 GET {{luogu}}/ranking
 ?_contentOnly
 ###
-GET {{luogu}}/contest/list
-?_contentOnly
-&page=1
+GET {{luogu}}/
+Cookie:__client_id=0b82137441aef9da93231b0c3a360cdbd2bdbbf4; login_referer=https%3A%2F%2Fwww.luogu.com.cn%2F; _uid=240275; CNZZDATA5476811=cnzz_eid%3D5090347-1607921936-%26ntime%3D1609995102; UM_distinctid=176db39541db6-0d36b4f0369bf9-5c19341b-15f900-176db39541e526
+###
+GET {{luogu}}/api/user/search
+?keyword=215982
+###
+POST {{luogu}}/api/chat/new"
+Content-Type: application/json
+Cookie:__client_id=0b82137441aef9da93231b0c3a360cdbd2bdbbf4; login_referer=https%3A%2F%2Fwww.luogu.com.cn%2F; _uid=240275; CNZZDATA5476811=cnzz_eid%3D5090347-1607921936-%26ntime%3D1609995102; UM_distinctid=176db39541db6-0d36b4f0369bf9-5c19341b-15f900-176db39541e526
+origin: https://www.luogu.com.cn
+Referer: https://www.luogu.com.cn/chat
+X-CSRF-Token: 1610083417:WFSXT6VZvEYdWlUBfBf7bcYQ2drsl13552yvBuoQ3PQ=
+
+{"user": 405742, "content": "Y"}
