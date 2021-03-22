@@ -44,38 +44,26 @@ function activate(context) {
 		})
 	});
 	let search = vscode.commands.registerCommand('luogu-on-vscode.search', function () {
-		vscode.window.showQuickPick(["题目", "题单", "比赛", "用户"]).then(value => {
-			if (value == '题目') {
-				vscode.window.showInputBox(
-					{ // 这个对象中所有参数都是可选参数
-						password: false, // 输入内容是否是密码
-						ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
-						placeHolder: '搜索题目' // 在输入框内的提示信息
-					}).then(function (msg) {
-						getProblemList(msg, 2).then(arr => {
-							console.log(arr);
-							vscode.window.showQuickPick(arr, {
-								canPickMany: false,
-								ignoreFocusOut: true,
-								matchOnDescription: true,
-								matchOnDetail: true,
-								placeHolder: '题目列表'
-							}).then(value => {
-								vscode.window.showInformationMessage(value.name);
-							});
-						})
+		// vscode.window.showQuickPick(["题目", "题单", "比赛", "用户"]).then(value => {
+		// 	if (value == '题目') {
+		// 		vscode.window.showInputBox({
+		// 			password: false,
+		// 			ignoreFocusOut: true,
+		// 			placeHolder: '题目列表'
+		// 		}).then(function (keyword) {
+		// 			showProblemList(keyword, 1);
+		// 		});
 
-					});
-			}
+		// 	}
 
-		})
-
-	});
-	let searchproblem = vscode.commands.registerCommand('luogu-on-vscode.searchproblem', function () {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-
+		// })
+		vscode.window.showInputBox({
+			password: false,
+			ignoreFocusOut: true,
+			placeHolder: '题目列表'
+		}).then(function (keyword) {
+			showProblemList(keyword, 1);
+		});
 	});
 	context.subscriptions.push(start);
 	context.subscriptions.push(showranking);
@@ -107,27 +95,27 @@ async function getRankingList(number) {
 	}
 	return Promise.resolve(arr);
 }
-async function getProblemList(keyword, number) {
+async function showProblemList(keyword, number) {
 	var arr = [];
-	for (var k = 1; k <= number; k++) {
-		let options = {
-			method: 'GET',
-			uri: String('https://www.luogu.com.cn/problem/list?_contentOnly&keyword=' + keyword + '&page=' + k)
-		};
-		let data = await request(options);
-		let body = JSON.parse(data);
-		console.log(body);
-		for (var i = 0; i < body.currentData.problems.result.length; i++) {
-			var t = {};
-			t.label = String(body.currentData.problems.result[i].pid + ' ' + body.currentData.problems.result[i].title);
-			t.name = body.currentData.problems.result[i].pid;
-			t.description = body.currentData.problems.result[i].difficulty;
-			t.detail = body.currentData.problems.result[i].totalAccepted + '/' + body.currentData.problems.result[i].totalSubmit;
-			arr.push(t)
-		}
+	let options = {
+		method: 'GET',
+		uri: String('https://www.luogu.com.cn/problem/list?_contentOnly&keyword=' + keyword + '&page=' + 1)
+	};
+	let data = await request(options);
+	let body = JSON.parse(data);
+	for (var i = 0, len = body.currentData.problems.result.length; i < len; i++) {
+		var t = {};
+		t.label = String(body.currentData.problems.result[i].pid + ' ' + body.currentData.problems.result[i].title);
+		t.name = body.currentData.problems.result[i].pid;
+		t.description = body.currentData.problems.result[i].difficulty;
+		t.detail = body.currentData.problems.result[i].totalAccepted + '/' + body.currentData.problems.result[i].totalSubmit;
+		console.log(t);
+		arr.push(t);
 	}
-	// console.log(arr);
-	return Promise.resolve(arr);
+	console.log(arr);
+	vscode.window.showQuickPick(arr).then(value => {
+		console.log(value);
+	});
 }
 
 

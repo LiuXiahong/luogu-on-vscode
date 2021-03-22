@@ -26,10 +26,6 @@
 			{
 				"command": "luogu-on-vscode.start",
 				"title": "luogu: Start"
-			},
-			{
-				"command": "luogu-on-vscode.searchproblem",
-				"title": "luogu: Search Problem"
 			}
 		],
 		"viewsContainers": {
