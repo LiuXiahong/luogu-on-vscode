@@ -1,6 +1,6 @@
-# luogu-on-vscode README
+# luogu README
 
-This is the README for your extension "luogu-on-vscode". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "luogu". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

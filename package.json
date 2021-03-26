@@ -1,10 +1,10 @@
 {
-	"name": "luogu-on-vscode",
-	"displayName": "luogu-on-vscode",
+	"name": "luogu",
+	"displayName": "luogu",
 	"description": "luogu",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.52.0"
+		"vscode": "^1.46.0"
 	},
 	"categories": [
 		"Other"
@@ -12,20 +12,12 @@
 	"activationEvents": [
 		"*"
 	],
-	"main": "./extension.js",
+	"main": "./src/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "luogu-on-vscode.showranking",
-				"title": "luogu: Show Ranking"
-			},
-			{
-				"command": "luogu-on-vscode.search",
-				"title": "luogu: Search"
-			},
-			{
-				"command": "luogu-on-vscode.start",
-				"title": "luogu: Start"
+				"command": "luogu.ShowRankingList",
+				"title": "Show Ranking list"
 			}
 		],
 		"viewsContainers": {
@@ -33,7 +25,7 @@
 				{
 					"id": "luogu",
 					"title": "洛谷",
-					"icon": "./calendar.svg"
+					"icon": "./beaker.svg"
 				}
 			]
 		},
@@ -56,17 +48,6 @@
 					"name": "讨论"
 				}
 			]
-		},
-		"configuration": {
-			"type": "object",
-			"title": "Luogu插件",
-			"properties": {
-				"luogu-on-vscode.rankingListPageNumber": {
-					"type": "number",
-					"default": "2",
-					"description": "洛谷咕值排名展示页数"
-				}
-			}
 		}
 	},
 	"scripts": {
@@ -75,7 +56,7 @@
 		"test": "node ./test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.52.0",
+		"@types/vscode": "^1.46.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.4",
 		"@types/node": "^12.11.7",
