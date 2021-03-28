@@ -18,6 +18,10 @@
 			{
 				"command": "luogu.ShowRankingList",
 				"title": "Show Ranking list"
+			},
+			{
+				"command": "luogu.SearchProblems",
+				"title": "Search Problems"
 			}
 		],
 		"viewsContainers": {

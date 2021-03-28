@@ -2,7 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
 // const luogu = require('./luogu');
-const CustomFunction=require('./customfunction');
+const CustomFunction = require('./customfunction');
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 
@@ -24,6 +24,21 @@ function activate(context) {
 		// Display a message box to the user
 		// vscode.window.showInformationMessage('Hello World from luogu!');
 		CustomFunction.ShowRankingList(1);
+		console.log('luogu.ShowRankingList runs succesfully!');
+	}));
+	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchProblems', function () {
+		let options = { // 这个对象中所有参数都是可选参数
+			password: false, // 输入内容是否是密码
+			ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
+			placeHolder: '输入关键字', // 在输入框内的提示信息
+			prompt: '。。。', // 在输入框下方的提示信息
+		};
+		vscode.window.showInputBox().then(msg => {
+			console.log("用户输入：" + msg);
+			CustomFunction.SearchProblems(msg,1);
+		});
+
+		console.log('luogu.SearchProblems runs succesfully!');
 	}));
 }
 exports.activate = activate;

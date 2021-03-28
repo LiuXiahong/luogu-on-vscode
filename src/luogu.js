@@ -1,21 +1,21 @@
 const request = require('request-promise');
 const vscode = require('vscode');
-async function GetLuoguApi(src, page_number, Beautiful_function) {
+async function GetLuoguApi(src, page_number, parse_function) {
     let options = {
         method: 'GET',
         uri: String(src + page_number)
     };
+    console.log('Get data from '+src+' ...');
     let data = await request(options);
     data = JSON.parse(data);
-    console.log(data);
-    let beautiful_data = Beautiful_function(page_number, data);
-    return Promise.resolve(beautiful_data);
+    console.log('Get data succesfully!');
+    let parse_data = parse_function(page_number, data);
+    return Promise.resolve(parse_data);
 }
 function RankingList(page_number, data) {
     let arr = [];
-    let flag = (page_number-1)*50+1;
-    if(page_number>1)
-    {
+    let flag = (page_number - 1) * 50 + 1;
+    if (page_number > 1) {
         arr.push({
             label: "上一页",
             description: "第" + (page_number - 1) + "页"
@@ -37,6 +37,26 @@ function RankingList(page_number, data) {
     }
     return arr;
 }
-
+function Problemslist(page_number,data)
+{
+    let arr = [];
+    if (page_number > 1) {
+        arr.push({
+            label: "上一页",
+            description: "第" + (page_number - 1) + "页"
+        });
+    }
+    arr.push({
+        label: "下一页",
+        description: "第" + (page_number + 1) + "页"
+    })
+    for (var i = 0, len = data.currentData.rankList.result.length; i < len; i++) {
+        let t = {};
+        t.label=data.currentData.rankList.result[i].title;
+        arr.push(t);
+    }
+    return arr;
+}
 exports.GetLuoguApi = GetLuoguApi;
 exports.RankingList = RankingList;
+exports.Problemslist=Problemslist;
