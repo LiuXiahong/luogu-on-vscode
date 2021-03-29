@@ -1,11 +1,15 @@
 const request = require('request-promise');
-const vscode = require('vscode');
+// const vscode = require('vscode');
+const luogu_difficulty = ["暂无评定", "入门", "普及-", "普及/提高-", "普及+/提高", "提高+/省选-", "省选/NOI-", "NOI/NOI+/CTSC"];
+
+
 async function GetLuoguApi(src, page_number, parse_function) {
+    let data_url = src + page_number;
     let options = {
         method: 'GET',
-        uri: String(src + page_number)
+        uri: data_url
     };
-    console.log('Get data from '+src+' ...');
+    console.log('Get data from ' + data_url + ' ...');
     let data = await request(options);
     data = JSON.parse(data);
     console.log('Get data succesfully!');
@@ -37,8 +41,8 @@ function RankingList(page_number, data) {
     }
     return arr;
 }
-function Problemslist(page_number,data)
-{
+
+function Problemslist(page_number, data) {
     let arr = [];
     if (page_number > 1) {
         arr.push({
@@ -50,13 +54,16 @@ function Problemslist(page_number,data)
         label: "下一页",
         description: "第" + (page_number + 1) + "页"
     })
-    for (var i = 0, len = data.currentData.rankList.result.length; i < len; i++) {
+    for (var i = 0, len = data.currentData.problems.result.length; i < len; i++) {
         let t = {};
-        t.label=data.currentData.rankList.result[i].title;
+        t.label = data.currentData.problems.result[i].title;
+        t.description = data.currentData.problems.result[i].pid;
+        // 
+        t.detail = data.currentData.problems.result[i].totalAccepted + '/' + data.currentData.problems.result[i].totalSubmit + ' ' + luogu_difficulty[data.currentData.problems.result[i].difficulty];
         arr.push(t);
     }
     return arr;
 }
 exports.GetLuoguApi = GetLuoguApi;
 exports.RankingList = RankingList;
-exports.Problemslist=Problemslist;
+exports.Problemslist = Problemslist;

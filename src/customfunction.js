@@ -24,7 +24,7 @@ function SearchProblems(keyword,page_number)
             SearchProblems(keyword,page_number+1);
         }
         else {
-            vscode.window.showInformationMessage(value.name, 'Yes', 'No');
+            vscode.window.showInformationMessage(value.label, 'Yes', 'No');
         }
     });
     return;
