@@ -1,7 +1,7 @@
 const request = require('request-promise');
 // const vscode = require('vscode');
 const luogu_difficulty = ["暂无评定", "入门", "普及-", "普及/提高-", "普及+/提高", "提高+/省选-", "省选/NOI-", "NOI/NOI+/CTSC"];
-
+const luogu_tags=["!","模拟","字符串","动态规划,动规,dp","搜索","数论,数学","图论","贪心","计算几何","暴力数据结构","高精","树形结构","递推","博弈论","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","重庆","四川"];
 
 async function GetLuoguApi(src, page_number, parse_function) {
     let data_url = src + page_number;
@@ -60,6 +60,10 @@ function Problemslist(page_number, data) {
         t.description = data.currentData.problems.result[i].pid;
         // 
         t.detail = data.currentData.problems.result[i].totalAccepted + '/' + data.currentData.problems.result[i].totalSubmit + ' ' + luogu_difficulty[data.currentData.problems.result[i].difficulty];
+        for(var j=0;j<data.currentData.problems.result[i].tags.length;j++)
+        {
+            t.detail=t.detail+' '+luogu_tags[data.currentData.problems.result[i].tags[j]];
+        }
         arr.push(t);
     }
     return arr;
