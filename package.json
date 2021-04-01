@@ -21,7 +21,15 @@
 			},
 			{
 				"command": "luogu.SearchProblems",
-				"title": "Search Problems"
+				"title": "Search Problems",
+				"icon":{
+					"light": "./svg/search.svg",
+					"dark": "./svg/search.svg"
+				}
+			},
+			{
+				"command": "luogu.Search",
+				"title": "Search"
 			}
 		],
 		"viewsContainers": {
@@ -29,7 +37,7 @@
 				{
 					"id": "luogu",
 					"title": "洛谷",
-					"icon": "./beaker.svg"
+					"icon": "./svg/beaker.svg"
 				}
 			]
 		},
@@ -50,6 +58,15 @@
 				{
 					"id": "luogu.views.discussions",
 					"name": "讨论"
+				}
+			]
+		},
+		"menus": {
+			"view/title": [
+				{
+					"command": "luogu.SearchProblems",
+					"when": "view == luogu.views.program",
+					"group": "navigation"
 				}
 			]
 		}
