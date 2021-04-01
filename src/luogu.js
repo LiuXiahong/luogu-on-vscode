@@ -56,7 +56,7 @@ function Problemslist(page_number, data) {
             description: "第" + (page_number + 1) + "页"
         })
     }
-    for (var i = 0, len = data.currentData.problems.result.length; i < len; i++) {
+    for (var i = 0, len = data.currentData.trainings.result.length; i < len; i++) {
         let t = {};
         t.label = data.currentData.problems.result[i].title;
         t.description = data.currentData.problems.result[i].pid;
@@ -68,6 +68,29 @@ function Problemslist(page_number, data) {
     }
     return arr;
 }
+function ProblemsSetsList(page_number, data) {
+    let arr = [];
+    if (page_number > 1) {
+        arr.push({
+            label: "上一页",
+            description: "第" + (page_number - 1) + "页"
+        });
+    }
+    if (page_number < data.currentData.problems.count / 50) {
+        arr.push({
+            label: "下一页",
+            description: "第" + (page_number + 1) + "页"
+        })
+    }
+    for (var i = 0, len = data.currentData.problems.result.length; i < len; i++) {
+        let t = {};
+        t.label = data.currentData.problems.result[i].id+' '+data.currentData.problems.result[i].title;
+        t.detail = data.currentData.problems.result[i].problemCount+' '+data.currentData.problems.result[i].markCount;
+        arr.push(t);
+    }
+    return arr;
+}
 exports.GetLuoguApi = GetLuoguApi;
 exports.RankingList = RankingList;
 exports.Problemslist = Problemslist;
+exports.ProblemsSetsList=ProblemsSetsList

@@ -43,6 +43,11 @@ function activate(context) {
 		
 		console.log('luogu.SearchProblems runs succesfully!');
 	}));
+	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchProblemsSets', function () {
+		vscode.window.showQuickPick(['official','select']).then(value => {
+				
+		});
+	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.ShowRankingList', function () {
 		// The code you place here will be executed every time your command is executed
 	

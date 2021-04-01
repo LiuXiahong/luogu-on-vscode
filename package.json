@@ -20,6 +20,10 @@
 				"title": "Show Ranking list"
 			},
 			{
+				"command": "luogu.Search",
+				"title": "Search"
+			},
+			{
 				"command": "luogu.SearchProblems",
 				"title": "Search Problems",
 				"icon":{
@@ -28,8 +32,12 @@
 				}
 			},
 			{
-				"command": "luogu.Search",
-				"title": "Search"
+				"command": "luogu.SearchProblemsSets",
+				"title": "Search Problems Sets",
+				"icon":{
+					"light": "./svg/search.svg",
+					"dark": "./svg/search.svg"
+				}
 			}
 		],
 		"viewsContainers": {
