@@ -1,783 +1,642 @@
 {
-    "code": 200,
-    "currentTemplate": "ProblemList",
-    "currentData": {
-      "problems": {
-        "count": 87,
-        "result": [
-          {
-            "tags": [
-              1
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 576908,
-            "totalAccepted": 339110,
-            "flag": 5,
-            "pid": "P1001",
-            "title": "A+B Problem",
-            "difficulty": 1,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 43,
-            "totalAccepted": 12,
-            "flag": 5,
-            "pid": "AT1761",
-            "title": "square1001\u306e\u901a\u5b66\u7d4c\u8def (square1001&#039;s School Road)",
-            "difficulty": 0,
-            "fullScore": 0,
-            "type": "AT"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 13,
-            "totalAccepted": 2,
-            "flag": 5,
-            "pid": "AT1763",
-            "title": "square1001\u306e\u597d\u304d\u306a\u56de\u6587\u6570 (square1001&#039;s Favorite Palindrome)",
-            "difficulty": 0,
-            "fullScore": 0,
-            "type": "AT"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 385,
-            "totalAccepted": 200,
-            "flag": 5,
-            "pid": "CF1225C",
-            "title": "p-binary",
-            "difficulty": 0,
-            "fullScore": 0,
-            "type": "CF"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 361,
-            "totalAccepted": 11,
-            "flag": 5,
-            "pid": "P4840",
-            "title": "P\u54e5\u65cb\u8f6c",
-            "difficulty": 6,
-            "fullScore": 900,
-            "type": "P"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 627,
-            "totalAccepted": 95,
-            "flag": 5,
-            "pid": "UVA10622",
-            "title": "\u5b8c\u5168P\u6b21\u65b9\u6570 Perfect P-th Powers",
-            "difficulty": 6,
-            "fullScore": 0,
-            "type": "UVA"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 775,
-            "totalAccepted": 404,
-            "flag": 5,
-            "pid": "P4839",
-            "title": "P\u54e5\u7684\u6876",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 123,
-            "totalAccepted": 26,
-            "flag": 5,
-            "pid": "P7133",
-            "title": "\u5c0f P \u7684\u661f\u7a7a",
-            "difficulty": 4,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              54,
-              244,
-              250
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 4782,
-            "totalAccepted": 1368,
-            "flag": 5,
-            "pid": "AT1357",
-            "title": "n^p mod m",
-            "difficulty": 2,
-            "fullScore": 0,
-            "type": "AT"
-          },
-          {
-            "tags": [
-              5,
-              246,
-              248
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 2388,
-            "totalAccepted": 1423,
-            "flag": 5,
-            "pid": "P4980",
-            "title": "\u3010\u6a21\u677f\u3011P\u00f3lya \u5b9a\u7406",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 42,
-            "totalAccepted": 0,
-            "flag": 5,
-            "pid": "UVA12762",
-            "title": "Counting P-Hulls",
-            "difficulty": 0,
-            "fullScore": 0,
-            "type": "UVA"
-          },
-          {
-            "tags": [
-              12,
-              108,
-              272,
-              319
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 1996,
-            "totalAccepted": 497,
-            "flag": 5,
-            "pid": "P4838",
-            "title": "P\u54e5\u7834\u89e3\u5bc6\u7801",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 14,
-            "totalAccepted": 1,
-            "flag": 5,
-            "pid": "SP16909",
-            "title": "EC_P - Critical Edges",
-            "difficulty": 0,
-            "fullScore": 0,
-            "type": "SP"
-          },
-          {
-            "tags": [
-              37,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 872,
-            "totalAccepted": 297,
-            "flag": 5,
-            "pid": "P6142",
-            "title": "[USACO20FEB]Delegation P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              1,
-              34,
-              46,
-              272,
-              287,
-              318,
-              319
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 199,
-            "totalAccepted": 55,
-            "flag": 5,
-            "pid": "P3666",
-            "title": "[USACO17OPEN]COWBASIC P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              33,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 154,
-            "totalAccepted": 56,
-            "flag": 5,
-            "pid": "P2748",
-            "title": "[USACO16OPEN]Landscaping P",
-            "difficulty": 0,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              36,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 216,
-            "totalAccepted": 82,
-            "flag": 5,
-            "pid": "P5423",
-            "title": "[USACO19OPEN]Valleys P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              33,
-              46,
-              111
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 446,
-            "totalAccepted": 186,
-            "flag": 5,
-            "pid": "P3141",
-            "title": "[USACO16FEB]Fenced In P",
-            "difficulty": 5,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
+  "code": 200,
+  "currentTemplate": "TrainingShow",
+  "currentData": {
+    "training": {
+      "description": "\u6b22\u8fce\u8865\u5145\u3002\u641c\u96c6\u4e1c\u65b9project\u76f8\u5173\u7684\u9898\u76ee\u3002\u8fd9\u91cc\u9762\u6536\u85cf\u7684\u9898\u76ee\u5c5e\u4e8e\u96be\u5ea6\u8f83\u6613\u8005\u3002\u9002\u5408\u63d0\u9ad8\u7ec4\u9009\u624b\u98df\u7528\u3002",
+      "problems": [
+        {
+          "problem": {
             "tags": [
               3,
-              7,
-              33,
-              46,
-              144,
-              319
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 4964,
-            "totalAccepted": 2027,
-            "flag": 5,
-            "pid": "P3147",
-            "title": "[USACO16OPEN]262144 P",
-            "difficulty": 4,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              42,
-              46,
-              127,
-              228
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 1478,
-            "totalAccepted": 634,
-            "flag": 5,
-            "pid": "P4374",
-            "title": "[USACO18OPEN]Disruption P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              37,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 215,
-            "totalAccepted": 105,
-            "flag": 5,
-            "pid": "P6276",
-            "title": "[USACO20OPEN]Exercise P",
-            "difficulty": 0,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              46,
-              56,
-              111,
-              288
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 955,
-            "totalAccepted": 219,
-            "flag": 5,
-            "pid": "P4182",
-            "title": "[USACO18JAN]Lifeguards P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              46,
-              58,
-              108
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 113,
-            "totalAccepted": 71,
-            "flag": 5,
-            "pid": "P7155",
-            "title": "[USACO20DEC] Spaceship P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              42,
-              46,
-              111,
-              232
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 432,
-            "totalAccepted": 128,
-            "flag": 5,
-            "pid": "P4088",
-            "title": "[USACO18FEB]Slingshot P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              42,
-              46,
-              254
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 181,
-            "totalAccepted": 76,
-            "flag": 5,
-            "pid": "P4184",
-            "title": "[USACO18JAN]Sprinklers P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              37,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 63,
-            "totalAccepted": 22,
-            "flag": 5,
-            "pid": "P6277",
-            "title": "[USACO20OPEN]Circus P",
-            "difficulty": 0,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              46,
-              58,
-              108
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 108,
-            "totalAccepted": 52,
-            "flag": 5,
-            "pid": "P7156",
-            "title": "[USACO20DEC] Cowmistry P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [],
-            "wantsTranslation": false,
-            "totalSubmit": 20,
-            "totalAccepted": 8,
-            "flag": 5,
-            "pid": "SP2056",
-            "title": "CERC07P - Rectangular Polygon",
-            "difficulty": 0,
-            "fullScore": 0,
-            "type": "SP"
-          },
-          {
-            "tags": [
-              36,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 1268,
-            "totalAccepted": 516,
-            "flag": 5,
-            "pid": "P5202",
-            "title": "[USACO19JAN]Redistricting P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              3,
-              34,
-              46,
-              111
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 684,
-            "totalAccepted": 259,
-            "flag": 5,
-            "pid": "P3607",
-            "title": "[USACO17JAN]Subsequence Reversal P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              50,
               81,
-              108,
-              234
+              151,
+              160,
+              244
             ],
             "wantsTranslation": false,
-            "totalSubmit": 352,
-            "totalAccepted": 77,
+            "totalSubmit": 547,
+            "totalAccepted": 168,
             "flag": 5,
-            "pid": "P5586",
-            "title": "[P5350] \u5e8f\u5217 (\u52a0\u5f3a\u7248)",
+            "pid": "P3786",
+            "title": "\u8403\u9999\u62b1\u897f\u74dc",
             "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              37,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 134,
-            "totalAccepted": 41,
-            "flag": 5,
-            "pid": "P6010",
-            "title": "[USACO20JAN]Falling Portals P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              46,
-              58,
-              108
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 91,
-            "totalAccepted": 45,
-            "flag": 5,
-            "pid": "P7293",
-            "title": "[USACO21JAN] Sum of Distances P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              46,
-              58,
-              108
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 62,
-            "totalAccepted": 21,
-            "flag": 5,
-            "pid": "P7417",
-            "title": "[USACO21FEB] Minimizing Edges P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              32,
-              46,
-              211,
-              228,
-              287,
-              319
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 10375,
-            "totalAccepted": 5462,
-            "flag": 5,
-            "pid": "P3128",
-            "title": "[USACO15DEC]Max Flow P",
-            "difficulty": 4,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              36,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 649,
-            "totalAccepted": 122,
-            "flag": 5,
-            "pid": "P5244",
-            "title": "[USACO19FEB] Mowing Mischief P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              34,
-              46,
-              319
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 771,
-            "totalAccepted": 189,
-            "flag": 5,
-            "pid": "P3665",
-            "title": "[USACO17OPEN]Switch Grass P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              46,
-              49,
-              112,
-              266
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 906,
-            "totalAccepted": 318,
-            "flag": 5,
-            "pid": "P4183",
-            "title": "[USACO18JAN]Cow at Large P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              46,
-              59
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 181,
-            "totalAccepted": 46,
-            "flag": 5,
-            "pid": "P7295",
-            "title": "[USACO21JAN] Paint by Letters P",
-            "difficulty": 0,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              46,
-              58,
-              108
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 126,
-            "totalAccepted": 80,
-            "flag": 5,
-            "pid": "P7416",
-            "title": "[USACO21FEB] No Time to Dry P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              5,
-              313
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 112,
-            "totalAccepted": 20,
-            "flag": 5,
-            "pid": "P6012",
-            "title": "[P5087] \u6570\u5b66 \u52a0\u5f3a\u7248",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              33,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 27,
-            "totalAccepted": 0,
-            "flag": 5,
-            "pid": "P6176",
-            "title": "[USACO16JAN]Lights Out P",
-            "difficulty": 0,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              37,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 298,
-            "totalAccepted": 123,
-            "flag": 5,
-            "pid": "P6144",
-            "title": "[USACO20FEB]Help Yourself P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              33,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 63,
-            "totalAccepted": 16,
-            "flag": 5,
-            "pid": "P6173",
-            "title": "[USACO16FEB]Circular Barn P",
-            "difficulty": 0,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              46,
-              103,
-              107
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 78,
-            "totalAccepted": 22,
-            "flag": 5,
-            "pid": "P4373",
-            "title": "[USACO18OPEN]Train Tracking P",
-            "difficulty": 0,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              33,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 114,
-            "totalAccepted": 45,
-            "flag": 5,
-            "pid": "P6172",
-            "title": "[USACO16FEB]Load Balancing P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              34,
-              42,
-              46,
-              53,
-              78,
-              127,
-              319
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 3459,
-            "totalAccepted": 2033,
-            "flag": 5,
-            "pid": "P3605",
-            "title": "[USACO17JAN]Promotion Counting P",
-            "difficulty": 6,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 1279,
-            "totalAccepted": 321,
-            "flag": 5,
-            "pid": "P5155",
-            "title": "[USACO18DEC]Balance Beam P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              35,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 385,
-            "totalAccepted": 150,
-            "flag": 5,
-            "pid": "P5156",
-            "title": "[USACO18DEC]Sort It Out P",
-            "difficulty": 7,
-            "fullScore": 100,
-            "type": "P"
-          },
-          {
-            "tags": [
-              36,
-              46
-            ],
-            "wantsTranslation": false,
-            "totalSubmit": 145,
-            "totalAccepted": 31,
-            "flag": 5,
-            "pid": "P5422",
-            "title": "[USACO19OPEN]Compound Escape P",
-            "difficulty": 7,
             "fullScore": 100,
             "type": "P"
           }
-        ],
-        "perPage": 50
-      },
-      "page": 1
+        },
+        {
+          "problem": {
+            "tags": [
+              1,
+              42,
+              53,
+              81,
+              107
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 777,
+            "totalAccepted": 213,
+            "flag": 5,
+            "pid": "P3787",
+            "title": "\u51b0\u7cbe\u51bb\u897f\u74dc",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              8,
+              81
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 242,
+            "totalAccepted": 58,
+            "flag": 5,
+            "pid": "P3788",
+            "title": "\u5e7d\u5e7d\u5b50\u5403\u897f\u74dc",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              1,
+              42,
+              81,
+              266
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 928,
+            "totalAccepted": 296,
+            "flag": 5,
+            "pid": "P3797",
+            "title": "\u5996\u68a6\u65a9\u6728\u68d2",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              81,
+              111,
+              252
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 13618,
+            "totalAccepted": 3332,
+            "flag": 5,
+            "pid": "P3799",
+            "title": "\u5996\u68a6\u62fc\u6728\u68d2",
+            "difficulty": 3,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              3,
+              56,
+              81,
+              108,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 2757,
+            "totalAccepted": 871,
+            "flag": 5,
+            "pid": "P3800",
+            "title": "Power\u6536\u96c6",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              42,
+              53,
+              81,
+              259
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 2199,
+            "totalAccepted": 757,
+            "flag": 5,
+            "pid": "P3801",
+            "title": "\u7ea2\u8272\u7684\u5e7b\u60f3\u4e61",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              81,
+              253,
+              268,
+              270
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 3681,
+            "totalAccepted": 1842,
+            "flag": 5,
+            "pid": "P3802",
+            "title": "\u5c0f\u9b54\u5973\u5e15\u742a",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              42,
+              53,
+              254,
+              330
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 3238,
+            "totalAccepted": 1143,
+            "flag": 5,
+            "pid": "P4231",
+            "title": "\u4e09\u6b65\u5fc5\u6740",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [],
+            "wantsTranslation": false,
+            "totalSubmit": 4401,
+            "totalAccepted": 967,
+            "flag": 5,
+            "pid": "P5239",
+            "title": "\u56de\u5fc6\u4eac\u90fd",
+            "difficulty": 4,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              5,
+              7,
+              36,
+              81,
+              108,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 4176,
+            "totalAccepted": 1689,
+            "flag": 5,
+            "pid": "P5514",
+            "title": "[MtOI2019]\u6c38\u591c\u7684\u62a5\u5e94",
+            "difficulty": 3,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              1,
+              2
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 8178,
+            "totalAccepted": 3063,
+            "flag": 5,
+            "pid": "P1724",
+            "title": "\u4e1c\u98ce\u8c37\u65e9\u82d7",
+            "difficulty": 2,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              3,
+              56,
+              148
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 14968,
+            "totalAccepted": 4659,
+            "flag": 5,
+            "pid": "P1725",
+            "title": "\u742a\u9732\u8bfa",
+            "difficulty": 4,
+            "fullScore": 200,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              6
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 10496,
+            "totalAccepted": 5088,
+            "flag": 5,
+            "pid": "P1726",
+            "title": "\u4e0a\u767d\u6cfd\u6167\u97f3",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              5,
+              6,
+              12,
+              149,
+              260
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 1169,
+            "totalAccepted": 488,
+            "flag": 5,
+            "pid": "P4910",
+            "title": "\u5e15\u79cb\u8389\u7684\u624b\u73af",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [],
+            "wantsTranslation": false,
+            "totalSubmit": 613,
+            "totalAccepted": 127,
+            "flag": 5,
+            "pid": "P4912",
+            "title": "\u5e15\u79cb\u8389\u7684\u9b54\u6cd5",
+            "difficulty": 6,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              1,
+              5
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 256,
+            "totalAccepted": 95,
+            "flag": 5,
+            "pid": "P4914",
+            "title": "\u96e3\u984c\u300c\u9f8d\u306e\u9838\u306e\u7389\u3000-\u4e94\u8272\u306e\u5f3e\u4e38-\u300d",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              42,
+              53,
+              107,
+              254
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 663,
+            "totalAccepted": 157,
+            "flag": 5,
+            "pid": "P4915",
+            "title": "\u5e15\u79cb\u8389\u7684\u9b54\u5bfc\u4e66",
+            "difficulty": 6,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [],
+            "wantsTranslation": false,
+            "totalSubmit": 122,
+            "totalAccepted": 9,
+            "flag": 5,
+            "pid": "P5129",
+            "title": "\u4e0d\u53ef\u601d\u8bae\u7684\u8ff7\u5bab",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [],
+            "wantsTranslation": false,
+            "totalSubmit": 313,
+            "totalAccepted": 48,
+            "flag": 5,
+            "pid": "P5131",
+            "title": "\u8377\u53d6\u878d\u5408",
+            "difficulty": 4,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [],
+            "wantsTranslation": false,
+            "totalSubmit": 445,
+            "totalAccepted": 89,
+            "flag": 5,
+            "pid": "P4918",
+            "title": "\u4fe1\u4ef0\u6536\u96c6",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              127,
+              229,
+              270,
+              330
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 701,
+            "totalAccepted": 178,
+            "flag": 5,
+            "pid": "P4230",
+            "title": "\u8fde\u73af\u75c5\u539f\u4f53",
+            "difficulty": 6,
+            "fullScore": 160,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              12,
+              81,
+              111,
+              254,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 2282,
+            "totalAccepted": 729,
+            "flag": 5,
+            "pid": "P3708",
+            "title": "koishi\u7684\u6570\u5b66\u9898",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              5,
+              36,
+              81,
+              107,
+              108,
+              278,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 3178,
+            "totalAccepted": 241,
+            "flag": 5,
+            "pid": "P5515",
+            "title": "[MtOI2019]\u7075\u68a6\u7684\u8ba1\u7b97\u5668",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              3,
+              36,
+              81,
+              108,
+              270,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 901,
+            "totalAccepted": 119,
+            "flag": 5,
+            "pid": "P5516",
+            "title": "[MtOI2019]\u5c0f\u94c3\u7684\u70e6\u607c",
+            "difficulty": 6,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              5,
+              36,
+              81,
+              108,
+              149,
+              264,
+              273,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 1199,
+            "totalAccepted": 160,
+            "flag": 5,
+            "pid": "P5517",
+            "title": "[MtOI2019]\u5e7b\u60f3\u4e61\u6570\u5b66\u7ade\u8d5b",
+            "difficulty": 6,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              5,
+              36,
+              266
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 368,
+            "totalAccepted": 117,
+            "flag": 5,
+            "pid": "P5389",
+            "title": "[Cnoi2019]\u6570\u5b66\u8bfe",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              36,
+              252,
+              314
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 862,
+            "totalAccepted": 205,
+            "flag": 5,
+            "pid": "P5390",
+            "title": "[Cnoi2019]\u6570\u5b66\u4f5c\u4e1a",
+            "difficulty": 4,
+            "fullScore": 244,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              36,
+              108,
+              139,
+              228,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 399,
+            "totalAccepted": 46,
+            "flag": 5,
+            "pid": "P5391",
+            "title": "[Cnoi2019]\u9752\u67d3\u4e4b\u5fc3",
+            "difficulty": 6,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              81,
+              108,
+              126,
+              148,
+              288,
+              319
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 1158,
+            "totalAccepted": 158,
+            "flag": 5,
+            "pid": "P4872",
+            "title": "OIer\u4eec\u7684\u4e1c\u65b9\u68a6",
+            "difficulty": 5,
+            "fullScore": 100,
+            "type": "P"
+          }
+        },
+        {
+          "problem": {
+            "tags": [
+              29,
+              94,
+              155,
+              160,
+              164
+            ],
+            "wantsTranslation": false,
+            "totalSubmit": 4280,
+            "totalAccepted": 1852,
+            "flag": 5,
+            "pid": "P4822",
+            "title": "[BJWC2012]\u51bb\u7ed3",
+            "difficulty": 4,
+            "fullScore": 100,
+            "type": "P"
+          }
+        }
+      ],
+      "userScore": null,
+      "createTime": 1582870865,
+      "deadline": null,
+      "problemCount": 31,
+      "marked": false,
+      "markCount": 212,
+      "id": 9,
+      "title": "\u4e1c\u65b9Project\u76f8\u5173\u8bd5\u9898\uff08Easy-Normal\uff09",
+      "type": 6,
+      "provider": {
+        "uid": 8457,
+        "name": "chen_zhe",
+        "slogan": "Aya \u6572\u53ef\u7231\u7684~",
+        "badge": "Aya",
+        "isAdmin": true,
+        "isBanned": false,
+        "color": "Purple",
+        "ccfLevel": 6
+      }
     },
-    "currentTitle": "\u9898\u76ee\u5217\u8868",
-    "currentTheme": null
-  }
+    "trainingProblems": {
+      "result": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "perPage": null,
+      "count": 31
+    },
+    "canEdit": false,
+    "privilegedTeams": []
+  },
+  "currentTitle": "\u4e1c\u65b9Project\u76f8\u5173\u8bd5\u9898\uff08Easy-Normal\uff09 - \u9898\u5355",
+  "currentTheme": null
+}

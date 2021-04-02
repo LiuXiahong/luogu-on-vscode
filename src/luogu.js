@@ -73,7 +73,9 @@ function ProblemsList(page_number, data) {
         t.description = data.currentData.problems.result[i].pid;
         t.detail = data.currentData.problems.result[i].totalAccepted + '/' + data.currentData.problems.result[i].totalSubmit + ' ' + luogu_difficulty[data.currentData.problems.result[i].difficulty];
         for (var j = 0; j < data.currentData.problems.result[i].tags.length; j++) {
-            t.detail = t.detail + ' ' + luogu_tags[data.currentData.problems.result[i].tags[j]];
+            if (luogu_tags[data.currentData.problems.result[i].tags[j]] != undefined) {
+                t.detail = t.detail + ' ' + luogu_tags[data.currentData.problems.result[i].tags[j]];
+            }
         }
         arr.push(t);
     }
@@ -120,8 +122,10 @@ function ProblemsListInTraining(page_number, data) {
         t.label = data.currentData.training.problems[i].problem.title;
         t.description = data.currentData.training.problems[i].problem.pid;
         t.detail = data.currentData.training.problems[i].problem.totalAccepted + '/' + data.currentData.training.problems[i].problem.totalSubmit + ' ' + luogu_difficulty[data.currentData.training.problems[i].problem.difficulty];
-        for (var j = 0; j < data.currentData.problems[i].problem.tags.length; j++) {
-            t.detail = t.detail + ' ' + luogu_tags[data.currentData.training.problems[i].problem.tags[j]];
+        for (var j = 0; j < data.currentData.training.problems[i].problem.tags.length; j++) {
+            if (luogu_tags[data.currentData.training.problems[i].problem.tags[j]] != undefined) {
+                t.detail = t.detail + ' ' + luogu_tags[data.currentData.training.problems[i].problem.tags[j]];
+            }
         }
         arr.push(t);
     }
@@ -136,4 +140,4 @@ exports.GetLuoguApi = GetLuoguApi;
 exports.RankingList = RankingList;
 exports.ProblemsList = ProblemsList;
 exports.ProblemsSetsList = ProblemsSetsList;
-exports.ProblemsListInTraining=ProblemsListInTraining;
+exports.ProblemsListInTraining = ProblemsListInTraining;
