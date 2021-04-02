@@ -27,16 +27,16 @@
 				"command": "luogu.SearchProblems",
 				"title": "Search Problems",
 				"icon":{
-					"light": "./svg/search.svg",
-					"dark": "./svg/search.svg"
+					"light": "./svg/search-light.svg",
+					"dark": "./svg/search-dark.svg"
 				}
 			},
 			{
 				"command": "luogu.SearchProblemsSets",
 				"title": "Search Problems Sets",
 				"icon":{
-					"light": "./svg/search.svg",
-					"dark": "./svg/search.svg"
+					"light": "./svg/search-light.svg",
+					"dark": "./svg/search-dark.svg"
 				}
 			}
 		],
@@ -74,6 +74,11 @@
 				{
 					"command": "luogu.SearchProblems",
 					"when": "view == luogu.views.program",
+					"group": "navigation"
+				},
+				{
+					"command": "luogu.SearchProblemsSets",
+					"when": "view==luogu.views.problem-sets",
 					"group": "navigation"
 				}
 			]

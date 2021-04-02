@@ -5,3 +5,5 @@ GET {{luogu}}/problem/list?_contentOnly&keyword=P1001&page=2
 GET {{luogu}}/problem/list?tag=73&page=1&_contentOnly
 ###
 GET {{luogu}}/training/list?keyword=p&type=select&_contentOnly
+###
+GET {{luogu}}/training/9?_contentOnly

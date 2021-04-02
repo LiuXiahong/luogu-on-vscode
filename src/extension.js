@@ -21,9 +21,11 @@ function activate(context) {
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.Search', function () {
 		// The code you place here will be executed every time your command is executed
 		vscode.window.showQuickPick(['Search Problems', 'Search Users', 'Search Problem Sets']).then(value => {
-			if(value=='Search Problems')
-			{
+			if (value == 'Search Problems') {
 				vscode.commands.executeCommand('luogu.SearchProblems');
+			}
+			if (value == 'Search Problem Sets') {
+				vscode.commands.executeCommand('luogu.SearchProblemsSets');
 			}
 		});
 	}));
@@ -35,22 +37,31 @@ function activate(context) {
 			prompt: '输入关键字' // 在输入框下方的提示信息
 		}
 		vscode.window.showInputBox(options).then(msg => {
-			console.log("用户输入：" + msg);
 			if (msg != undefined) {
 				CustomFunction.SearchProblems(msg, 1);
 			}
 		});
-		
+
 		console.log('luogu.SearchProblems runs succesfully!');
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchProblemsSets', function () {
-		vscode.window.showQuickPick(['official','select']).then(value => {
-				
+		vscode.window.showQuickPick(['official', 'select']).then(value => {
+			let options = { // 这个对象中所有参数都是可选参数
+				password: false, // 输入内容是否是密码
+				ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
+				placeHolder: '例', // 在输入框内的提示信息
+				prompt: '输入关键字' // 在输入框下方的提示信息
+			}
+			vscode.window.showInputBox(options).then(msg => {
+				if (msg != undefined) {
+					CustomFunction.SearchProblemsSets(msg, value, 1);
+				}
+			});
 		});
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.ShowRankingList', function () {
 		// The code you place here will be executed every time your command is executed
-	
+
 		// Display a message box to the user
 		// vscode.window.showInformationMessage('Hello World from luogu!');
 		CustomFunction.ShowRankingList(1);
