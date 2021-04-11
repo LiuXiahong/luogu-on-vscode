@@ -19,8 +19,18 @@ async function GetLuoguApi(src, page_number, parse_function) {
     let data = await request(options);
     data = JSON.parse(data);
     console.log('Get data succesfully!');
-    let parse_data = parse_function(page_number, data);
+    let parse_data;
+    if (page_number) {
+        parse_data = parse_function(page_number, data);
+    }
+    else{
+        parse_data = parse_function(data);
+    }
     return Promise.resolve(parse_data);
+}
+function DoNotParse(data)
+{
+    return data;
 }
 function RankingList(page_number, data) {
     let arr = [];
@@ -40,14 +50,14 @@ function RankingList(page_number, data) {
         t.label = '#' + flag + ' ' + data.currentData.rankList.result[i].user.name;
         t.description = data.currentData.rankList.result[i].user.slogan;
         t.detail = String(data.currentData.rankList.result[i].rating + ' ' + data.currentData.rankList.result[i].basicRating + ' ' + data.currentData.rankList.result[i].socialRating + ' ' + data.currentData.rankList.result[i].contestRating + ' ' + data.currentData.rankList.result[i].practiceRating + ' ' + data.currentData.rankList.result[i].prizeRating);
-        // t.name = data.currentData.rankList.result[i].user.name;
-        t.url = String('https://www.luogu.com.cn/user/' + data.currentData.rankList.result[i].user.uid);
+        t.uid = data.currentData.rankList.result[i].user.uid;
         arr.push(t);
         flag++;
     }
     if (arr.length == 0) {
         arr.push({
-            label: "你来到了没有知识的荒野"
+            label: "你来到了没有知识的荒野",
+            uid: null
         });
     }
     return arr;
@@ -72,6 +82,7 @@ function ProblemsList(page_number, data) {
         t.label = data.currentData.problems.result[i].title;
         t.description = data.currentData.problems.result[i].pid;
         t.detail = data.currentData.problems.result[i].totalAccepted + '/' + data.currentData.problems.result[i].totalSubmit + ' ' + luogu_difficulty[data.currentData.problems.result[i].difficulty];
+        t.pid = data.currentData.problems.result[i].pid;
         for (var j = 0; j < data.currentData.problems.result[i].tags.length; j++) {
             if (luogu_tags[data.currentData.problems.result[i].tags[j]] != undefined) {
                 t.detail = t.detail + ' ' + luogu_tags[data.currentData.problems.result[i].tags[j]];
@@ -81,7 +92,8 @@ function ProblemsList(page_number, data) {
     }
     if (arr.length == 0) {
         arr.push({
-            label: "你来到了没有知识的荒野"
+            label: "你来到了没有知识的荒野",
+            pid: null
         });
     }
     return arr;
@@ -110,7 +122,8 @@ function ProblemsSetsList(page_number, data) {
     }
     if (arr.length == 0) {
         arr.push({
-            label: "你来到了没有知识的荒野"
+            label: "你来到了没有知识的荒野",
+            id: null
         });
     }
     return arr;
@@ -122,6 +135,7 @@ function ProblemsListInTraining(page_number, data) {
         t.label = data.currentData.training.problems[i].problem.title;
         t.description = data.currentData.training.problems[i].problem.pid;
         t.detail = data.currentData.training.problems[i].problem.totalAccepted + '/' + data.currentData.training.problems[i].problem.totalSubmit + ' ' + luogu_difficulty[data.currentData.training.problems[i].problem.difficulty];
+        t.pid = data.currentData.training.problems[i].problem.pid;
         for (var j = 0; j < data.currentData.training.problems[i].problem.tags.length; j++) {
             if (luogu_tags[data.currentData.training.problems[i].problem.tags[j]] != undefined) {
                 t.detail = t.detail + ' ' + luogu_tags[data.currentData.training.problems[i].problem.tags[j]];
@@ -131,7 +145,8 @@ function ProblemsListInTraining(page_number, data) {
     }
     if (arr.length == 0) {
         arr.push({
-            label: "你来到了没有知识的荒野"
+            label: "你来到了没有知识的荒野",
+            pid: null
         });
     }
     return arr;
@@ -141,3 +156,4 @@ exports.RankingList = RankingList;
 exports.ProblemsList = ProblemsList;
 exports.ProblemsSetsList = ProblemsSetsList;
 exports.ProblemsListInTraining = ProblemsListInTraining;
+exports.DoNotParse=DoNotParse;
