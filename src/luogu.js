@@ -9,7 +9,7 @@ async function GetLuoguApi(src, page_number, parse_function) {
         data_url = src
     }
     else {
-        data_url = src + page_number;
+        data_url = src + '&page='+page_number;
     }
     let options = {
         method: 'GET',

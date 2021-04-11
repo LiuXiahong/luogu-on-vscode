@@ -1,7 +1,8 @@
 const vscode = require('vscode');
 const luogu = require('./luogu');
+const luoguview=require('./luoguview');
 function ShowRankingList(page_number) {
-    let url = 'https://www.luogu.com.cn/ranking?_contentOnly&page=';
+    let url = 'https://www.luogu.com.cn/ranking?_contentOnly';
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, page_number, luogu.RankingList)).then(value => {
         if (value != undefined) {
             if (value.label == "上一页") {
@@ -11,14 +12,14 @@ function ShowRankingList(page_number) {
                 ShowRankingList(page_number + 1);
             }
             else {
-                vscode.window.showInformationMessage(value.name, 'Yes', 'No');
+                luoguview.ShowUser(value.uid);
             }
         }
     });
     return;
 }
 function SearchProblems(keyword, page_number) {
-    let url = 'https://www.luogu.com.cn/problem/list?_contentOnly&keyword=' + keyword + '&page=';
+    let url = 'https://www.luogu.com.cn/problem/list?_contentOnly&keyword=' + keyword;
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, page_number, luogu.ProblemsList)).then(value => {
         if (value != undefined) {
             if (value.label == "上一页") {
@@ -28,7 +29,7 @@ function SearchProblems(keyword, page_number) {
                 SearchProblems(keyword, page_number + 1);
             }
             else {
-                vscode.window.showInformationMessage(value.label, 'Yes', 'No');
+                luoguview.ShowProblem(pid);
             }
         }
     });
@@ -42,7 +43,6 @@ function SearchProblemsSets(keyword, type, page_number) {
     else {
         url = url + '&type=select'
     }
-    url = url + '&page=';
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, page_number, luogu.ProblemsSetsList)).then(value => {
         if (value != undefined) {
             if (value.label == "上一页") {
