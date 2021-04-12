@@ -1,12 +1,14 @@
 const vscode=require('vscode');
-function ShowProblem(pid)
+const CustomFunction=require('./customfunction');
+async function ShowProblem(pid)
 {
-    vscode.window.showInformationMessage(pid, 'Yes', 'No');
-    return;
+    await vscode.window.showInformationMessage(pid, 'Yes', 'No');
 }
-function ShowUser(uid)
+async function ShowUser(uid)
 {
-    vscode.window.showInformationMessage(uid, 'Yes', 'No');
+    // CustomFunction.ConsoleLog(uid);
+    await vscode.window.showInformationMessage(uid, 'Yes', 'No');
+    // CustomFunction.ConsoleLog(1);
 }
 exports.ShowProblem=ShowProblem;
 exports.ShowUser=ShowUser;

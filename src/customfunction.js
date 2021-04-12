@@ -1,6 +1,12 @@
 const vscode = require('vscode');
 const luogu = require('./luogu');
 const luoguview=require('./luoguview');
+const sd=require('silly-datetime');
+function ConsoleLog(data)
+{
+    var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+    console.log(`[${time}] ${data}`);
+}
 function ShowRankingList(page_number) {
     let url = 'https://www.luogu.com.cn/ranking?_contentOnly';
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, page_number, luogu.RankingList)).then(value => {
@@ -12,6 +18,7 @@ function ShowRankingList(page_number) {
                 ShowRankingList(page_number + 1);
             }
             else {
+                ConsoleLog(value.uid);
                 luoguview.ShowUser(value.uid);
             }
         }
@@ -29,7 +36,7 @@ function SearchProblems(keyword, page_number) {
                 SearchProblems(keyword, page_number + 1);
             }
             else {
-                luoguview.ShowProblem(pid);
+                luoguview.ShowProblem(value.pid);
             }
         }
     });
@@ -60,13 +67,14 @@ function SearchProblemsSets(keyword, type, page_number) {
 }
 function ShowProblemListInTraining(id) {
     let url = 'https://www.luogu.com.cn/training/' + id + '?_contentOnly';
-    vscode.window.showQuickPick(luogu.GetLuoguApi(url, -1, luogu.ProblemsListInTraining)).then(value => {
+    vscode.window.showQuickPick(luogu.GetLuoguApi(url, null, luogu.ProblemsListInTraining)).then(value => {
         if (value != undefined) {
-            vscode.window.showInformationMessage(value.label, 'Yes', 'No');
+            luoguview.ShowProblem(value.pid);
         }
     });
     return;
 }
+exports.ConsoleLog=ConsoleLog;
 exports.ShowRankingList = ShowRankingList;
 exports.SearchProblems = SearchProblems;
 exports.SearchProblemsSets = SearchProblemsSets;

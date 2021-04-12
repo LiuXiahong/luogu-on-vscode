@@ -1,7 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-// const luogu = require('./luogu');
 const CustomFunction = require('./customfunction');
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -13,7 +12,8 @@ function activate(context) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "luogu" is now active!');
+	// console.log('Congratulations, your extension "luogu" is now active!');
+	CustomFunction.ConsoleLog('Congratulations, your extension "luogu" is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
@@ -41,8 +41,6 @@ function activate(context) {
 				CustomFunction.SearchProblems(msg, 1);
 			}
 		});
-
-		console.log('luogu.SearchProblems runs succesfully!');
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchProblemsSets', function () {
 		vscode.window.showQuickPick(['official', 'select']).then(value => {
@@ -65,7 +63,6 @@ function activate(context) {
 		// Display a message box to the user
 		// vscode.window.showInformationMessage('Hello World from luogu!');
 		CustomFunction.ShowRankingList(1);
-		console.log('luogu.ShowRankingList runs succesfully!');
 	}));
 }
 exports.activate = activate;
