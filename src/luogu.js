@@ -150,9 +150,29 @@ function ProblemsListInTraining(data) {
     }
     return arr;
 }
+function UsersList(data)
+{
+    let arr = [];
+    for (var i = 0, len = data.users.length; i < len; i++) {
+        let t = {};
+        t.label = data.users[i].name;
+        t.description = data.users[i].color;
+        t.detail = data.users[i].slogan;
+        t.uid = data.users[i].uid;
+        arr.push(t);
+    }
+    if (arr.length == 0) {
+        arr.push({
+            label: "你来到了没有知识的荒野",
+            uid: null
+        });
+    }
+    return arr;
+}
 exports.GetLuoguApi = GetLuoguApi;
 exports.RankingList = RankingList;
 exports.ProblemsList = ProblemsList;
 exports.ProblemsSetsList = ProblemsSetsList;
 exports.ProblemsListInTraining = ProblemsListInTraining;
 exports.DoNotParse=DoNotParse;
+exports.UsersList=UsersList;

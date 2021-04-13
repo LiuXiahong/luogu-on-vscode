@@ -38,6 +38,14 @@
 					"light": "./svg/search-light.svg",
 					"dark": "./svg/search-dark.svg"
 				}
+			},
+			{
+				"command": "luogu.SearchUsers",
+				"title": "Search Users",
+				"icon": {
+					"light": "./svg/search-light.svg",
+					"dark": "./svg/search-dark.svg"
+				}
 			}
 		],
 		"viewsContainers": {

@@ -57,6 +57,13 @@ function activate(context) {
 			});
 		});
 	}));
+	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchUsers', function () {
+		// The code you place here will be executed every time your command is executed
+
+		// Display a message box to the user
+		// vscode.window.showInformationMessage('Hello World from luogu!');
+		CustomFunction.SearchUsers('240275');
+	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.ShowRankingList', function () {
 		// The code you place here will be executed every time your command is executed
 

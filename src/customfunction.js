@@ -1,6 +1,6 @@
 const vscode = require('vscode');
 const luogu = require('./luogu');
-const luoguview=require('./luoguview');
+const luoguview=require('./webview');
 const sd=require('silly-datetime');
 function ConsoleLog(data)
 {
@@ -18,8 +18,7 @@ function ShowRankingList(page_number) {
                 ShowRankingList(page_number + 1);
             }
             else {
-                ConsoleLog(value.uid);
-                luoguview.ShowUser(value.uid);
+                luoguview.ShowUser(String(value.uid));
             }
         }
     });
@@ -65,6 +64,15 @@ function SearchProblemsSets(keyword, type, page_number) {
     });
     return;
 }
+function SearchUsers(keyword) {
+    let url = 'https://www.luogu.com.cn/api/user/search?keyword=' + keyword;
+    vscode.window.showQuickPick(luogu.GetLuoguApi(url, null, luogu.UsersList)).then(value => {
+        if (value != undefined) {
+            luoguview.ShowUser(value.uid);
+        }
+    });
+    return;
+}
 function ShowProblemListInTraining(id) {
     let url = 'https://www.luogu.com.cn/training/' + id + '?_contentOnly';
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, null, luogu.ProblemsListInTraining)).then(value => {
@@ -79,3 +87,4 @@ exports.ShowRankingList = ShowRankingList;
 exports.SearchProblems = SearchProblems;
 exports.SearchProblemsSets = SearchProblemsSets;
 exports.ShowProblemListInTraining = ShowProblemListInTraining;
+exports.SearchUsers=SearchUsers;
