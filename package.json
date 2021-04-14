@@ -17,11 +17,19 @@
 		"commands": [
 			{
 				"command": "luogu.ShowRankingList",
-				"title": "Show Ranking list"
+				"title": "Show Ranking list",
+				"icon": {
+					"light": "./svg/list-light.svg",
+					"dark": ""
+				}
 			},
 			{
 				"command": "luogu.Search",
-				"title": "Search"
+				"title": "Search",
+				"icon": {
+					"light": "./svg/search-light.svg",
+					"dark": "./svg/search-dark.svg"
+				}
 			},
 			{
 				"command": "luogu.SearchProblems",
@@ -60,16 +68,16 @@
 		"views": {
 			"luogu": [
 				{
+					"id": "luogu.views.user",
+					"name": "用户"
+				},
+				{
 					"id": "luogu.views.program",
 					"name": "题目"
 				},
 				{
 					"id": "luogu.views.problem-sets",
 					"name": "题单"
-				},
-				{
-					"id": "luogu.views.contests",
-					"name": "比赛"
 				},
 				{
 					"id": "luogu.views.discussions",
@@ -79,6 +87,16 @@
 		},
 		"menus": {
 			"view/title": [
+				{
+					"command": "luogu.Search",
+					"when": "view == luogu.views.user",
+					"group": "navigation"
+				},
+				{
+					"command": "luogu.ShowRankingList",
+					"when": "view == luogu.views.user",
+					"group": "navigation"
+				},
 				{
 					"command": "luogu.SearchProblems",
 					"when": "view == luogu.views.program",

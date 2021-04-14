@@ -19,7 +19,6 @@ function activate(context) {
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.Search', function () {
-		// The code you place here will be executed every time your command is executed
 		vscode.window.showQuickPick(['Search Problems', 'Search Users', 'Search Problem Sets']).then(value => {
 			if (value == 'Search Problems') {
 				vscode.commands.executeCommand('luogu.SearchProblems');
@@ -27,10 +26,13 @@ function activate(context) {
 			if (value == 'Search Problem Sets') {
 				vscode.commands.executeCommand('luogu.SearchProblemsSets');
 			}
+			if (value == 'Search Users') {
+				vscode.commands.executeCommand('luogu.SearchUsers');
+			}
 		});
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchProblems', function () {
-		let options = { // 这个对象中所有参数都是可选参数
+		let options = {
 			password: false, // 输入内容是否是密码
 			ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
 			placeHolder: '例:P1001', // 在输入框内的提示信息
@@ -43,26 +45,37 @@ function activate(context) {
 		});
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchProblemsSets', function () {
-		vscode.window.showQuickPick(['official', 'select']).then(value => {
-			let options = { // 这个对象中所有参数都是可选参数
+		vscode.window.showQuickPick(['官方题单', '用户题单']).then(value => {
+			let options = {
 				password: false, // 输入内容是否是密码
 				ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
 				placeHolder: '例', // 在输入框内的提示信息
 				prompt: '输入关键字' // 在输入框下方的提示信息
 			}
-			vscode.window.showInputBox(options).then(msg => {
-				if (msg != undefined) {
-					CustomFunction.SearchProblemsSets(msg, value, 1);
+			vscode.window.showInputBox(options).then(keyword => {
+				if (keyword != undefined) {
+					if(value=='官方题单'){
+						CustomFunction.SearchTrainings(keyword,'official', 1);
+					}
+					else{
+						CustomFunction.SearchTrainings(keyword,'select', 1);
+					}
 				}
 			});
 		});
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.SearchUsers', function () {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		// vscode.window.showInformationMessage('Hello World from luogu!');
-		CustomFunction.SearchUsers('240275');
+		let options = {
+			password: false, // 输入内容是否是密码
+			ignoreFocusOut: true, // 默认false，设置为true时鼠标点击别的地方输入框不会消失
+			placeHolder: '例：kkkc03', // 在输入框内的提示信息
+			prompt: '输入关键字' // 在输入框下方的提示信息
+		}
+		vscode.window.showInputBox(options).then(keyword => {
+			if (keyword != undefined) {
+				CustomFunction.SearchUsers(keyword);
+			}
+		});
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('luogu.ShowRankingList', function () {
 		// The code you place here will be executed every time your command is executed
