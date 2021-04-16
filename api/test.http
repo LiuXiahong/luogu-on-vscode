@@ -18,4 +18,4 @@ X-CSRF-Token: 1617515289:S/+YnQ4209EKIXZXl8v+P7jRsWMUsijURHPLdzDDy7c=
     "user":"405742"
 }
 ###
-GET {{luogu}}/api/user/search?keyword=240275
+GET {{luogu}}/problem/P1001?_contentOnly

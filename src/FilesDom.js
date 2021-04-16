@@ -1,4 +1,5 @@
 const fs = require('fs');
+const luogu=require('./luogu');
 function GetUserTemplate(uid) {
     return `
     <!DOCTYPE html>
