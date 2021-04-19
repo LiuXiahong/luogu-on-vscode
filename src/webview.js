@@ -7,7 +7,7 @@ async function ShowProblem(pid) {
     const panel = vscode.window.createWebviewPanel('problem information','题目详情',vscode.ViewColumn.Two,{
         enableScripts: true
     });
-    panel.webview.html=FilesDom.GetUserTemplate(String(pid),data);
+    panel.webview.html=FilesDom.GetProblemTemplate(String(pid),data);
 }
 exports.ShowProblem = ShowProblem;
 
