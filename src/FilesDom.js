@@ -26,7 +26,6 @@ function GetProblemTemplate(pid,data) {
     let inputFormat_html=converter.makeHtml(data.currentData.problem.inputFormat);
     let outputFormat_html=converter.makeHtml(data.currentData.problem.outputFormat);
     let hint_html=converter.makeHtml(data.currentData.problem.hint);
-    //outputFormat
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -163,6 +162,7 @@ function GetProblemTemplate(pid,data) {
             img {
                 max-width: 100%;
                 max-height: 100%;
+                border-radius: 3px;
             }
 
             a {
@@ -292,7 +292,7 @@ function GetProblemTemplate(pid,data) {
     </head>
 
     <body>
-        <h1>${pid}</h1>
+        <h1>${pid+' '+data.currentTitle}</h1>
         <div id="background">
             <h2>题目背景</h2>
             ${background_html}
