@@ -292,7 +292,7 @@ function GetProblemTemplate(pid,data) {
     </head>
 
     <body>
-        <h1>${pid+' '+data.currentTitle}</h1>
+        <h1>${pid+'|'+data.currentTitle}</h1>
         <div id="background">
             <h2>题目背景</h2>
             ${background_html}
