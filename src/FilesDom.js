@@ -292,33 +292,44 @@ function GetProblemTemplate(pid,data) {
     </head>
 
     <body>
+        <br/>
         <h1>${pid+'|'+data.currentTitle}</h1>
         <div id="background">
-            <h2>题目背景</h2>
+        <br/>
+            <h2><strong>题目背景</strong></h2>
+            <br/>
             ${background_html}
         </div>
-        <hr/>
         <div id="description">
-            <h2>题目描述</h2>
+        <br/>
+            <h2><strong>题目描述</strong></h2>
+            <br/>
             ${description_html}
         </div>
-        <hr/>
         <div id="inputFormat">
-            <h2>输入格式</h2>
+        <br/>
+            <h2><strong>输入格式</strong></h2>
+            <br/>
             ${inputFormat_html}
         </div>
-        <hr/>
         <div id="outputFormat">
-            <h2>输出格式</h2>
+        <br/>
+            <h2><strong>输出格式</strong></h2>
+            <br/>
             ${outputFormat_html}
         </div>
-        <hr/>
         <div id="samples">
-            <h2>输入输出样例</h2>
+        <br/>
+            <h2><strong>输入输出样例</strong></h2>
+            <br/>
+            ${data.currentData.problem.samples[0]?'<strong>#1</strong><pre><code>'+data.currentData.problem.samples[0][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[0][1]+'</code></pre>':''}
+            ${data.currentData.problem.samples[1]?'<strong>#1</strong><pre><code>'+data.currentData.problem.samples[1][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[1][1]+'</code></pre>':''}
+            ${data.currentData.problem.samples[2]?'<strong>#1</strong><pre><code>'+data.currentData.problem.samples[2][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[2][1]+'</code></pre>':''}
         </div>
-        <hr/>
         <div id="hint">
-            <h2>说明/提示</h2>
+        <br/>
+            <h2><strong>说明/提示</strong></h2>
+            <br/>
             ${hint_html}
         </div>
     </body>
