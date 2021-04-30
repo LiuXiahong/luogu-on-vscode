@@ -54,12 +54,7 @@ function activate(context) {
 			}
 			vscode.window.showInputBox(options).then(keyword => {
 				if (keyword != undefined) {
-					if(value=='官方题单'){
-						CustomFunction.SearchTrainings(keyword,'official', 1);
-					}
-					else{
-						CustomFunction.SearchTrainings(keyword,'select', 1);
-					}
+					CustomFunction.SearchTrainings(keyword,value=='官方题单'?'official':'select', 1);
 				}
 			});
 		});

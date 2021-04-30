@@ -1,16 +1,10 @@
 const request = require('request-promise');
-const CustomFunction=require('./customfunction');
+const CustomFunction = require('./customfunction');
 const luogu_difficulty = ["暂无评定", "入门", "普及-", "普及/提高-", "普及+/提高", "提高+/省选-", "省选/NOI-", "NOI/NOI+/CTSC"];
 const luogu_tags = ["!", "模拟", "字符串", "动态规划,动规,dp", "搜索", "数论,数学", "图论", "贪心", "计算几何", "暴力数据结构", "高精", "树形结构", "递推", "博弈论", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "重庆", "四川", "河南", "莫队", "线段树", "倍增", "线性结构", "二分答案", "USACO", "并查集", "各省省选", "点分治", "平衡树", "二叉堆", "WC/CTSC/集训队", "树状数组", "递归", "最大匹配", "单调队列", "POI", "2021", "2022", "2023", "2024", "2025", "!", "!", "!", "!", "!", "!", "!", "福建省历届夏令营", "矩阵运算", "整数研究", "!", "!", "!", "!", "NOI系列", "离散化", "网络流", "!", "洛谷原创", "NOIp普及组", "NOIp提高组", "NOIp初赛", "APIO", "!", "!", "浙江", "上海", "福建", "江苏", "安徽", "湖南", "北京", "河北", "广东", "山东", "吉林", "NOI导刊", "cdq分治", "后缀自动机,SAM", "IOI", "!", "!", "!", "!", "!", "!", "!", "基础算法", "枚举,暴力", "分治", "排序", "冒泡排序", "选择排序", "桶排", "插入排序", "归并排序", "快速排序,快排", "堆排序", "希尔排序", "外部排序", "查找算法", "顺序查找", "二分查找", ""];
 
 async function GetLuoguApi(src, page_number, parse_function) {
-    let data_url;
-    if (page_number == null) {
-        data_url = src
-    }
-    else {
-        data_url = src + '&page='+page_number;
-    }
+    let data_url = src + (page_number ? '' : '&page=' + page_number);
     let options = {
         method: 'GET',
         uri: data_url
@@ -18,17 +12,10 @@ async function GetLuoguApi(src, page_number, parse_function) {
     CustomFunction.ConsoleLog('Get data from ' + data_url + '    ...');
     let data = JSON.parse(await request(options));
     console.log(data);
-    let parse_data;
-    if (page_number) {
-        parse_data = parse_function(page_number, data);
-    }
-    else{
-        parse_data = parse_function(data);
-    }
+    let parse_data = page_number ? parse_function(page_number, data) : parse_function(data);
     return Promise.resolve(parse_data);
 }
-function DoNotParse(data)
-{
+function DoNotParse(data) {
     return data;
 }
 function RankingList(page_number, data) {
@@ -37,12 +24,16 @@ function RankingList(page_number, data) {
     if (page_number > 1) {
         arr.push({
             label: "上一页",
-            description: "第" + (page_number - 1) + "页"
+            description: "第" + (page_number - 1) + "页",
+            detail: null,
+            uid: null
         });
     }
     arr.push({
         label: "下一页",
-        description: "第" + (page_number + 1) + "页"
+        description: "第" + (page_number + 1) + "页",
+        detail: null,
+        uid: null
     })
     for (var i = 0, len = data.currentData.rankList.result.length; i < len; i++) {
         let t = {};
@@ -56,7 +47,9 @@ function RankingList(page_number, data) {
     if (arr.length == 0) {
         arr.push({
             label: "你来到了没有知识的荒野",
-            uid: null
+            description: null,
+            detail: null,
+            pid: null
         });
     }
     return arr;
@@ -67,13 +60,17 @@ function ProblemsList(page_number, data) {
     if (page_number > 1) {
         arr.push({
             label: "上一页",
-            description: "第" + (page_number - 1) + "页"
+            description: "第" + (page_number - 1) + "页",
+            detail: null,
+            pid: null
         });
     }
     if (page_number < data.currentData.problems.count / 50) {
         arr.push({
             label: "下一页",
-            description: "第" + (page_number + 1) + "页"
+            description: "第" + (page_number + 1) + "页",
+            detail: null,
+            pid: null
         })
     }
     for (var i = 0, len = data.currentData.problems.result.length; i < len; i++) {
@@ -92,6 +89,8 @@ function ProblemsList(page_number, data) {
     if (arr.length == 0) {
         arr.push({
             label: "你来到了没有知识的荒野",
+            description: null,
+            detail: null,
             pid: null
         });
     }
@@ -102,13 +101,17 @@ function TrainingsList(page_number, data) {
     if (page_number > 1) {
         arr.push({
             label: "上一页",
-            description: "第" + (page_number - 1) + "页"
+            description: "第" + (page_number - 1) + "页",
+            detail: null,
+            id: null
         });
     }
     if (page_number < data.currentData.trainings.count / 50) {
         arr.push({
             label: "下一页",
-            description: "第" + (page_number + 1) + "页"
+            description: "第" + (page_number + 1) + "页",
+            detail: null,
+            id: null
         })
     }
     for (var i = 0, len = data.currentData.trainings.result.length; i < len; i++) {
@@ -122,6 +125,8 @@ function TrainingsList(page_number, data) {
     if (arr.length == 0) {
         arr.push({
             label: "你来到了没有知识的荒野",
+            description: null,
+            detail: null,
             id: null
         });
     }
@@ -145,13 +150,14 @@ function ProblemsListInTraining(data) {
     if (arr.length == 0) {
         arr.push({
             label: "你来到了没有知识的荒野",
+            description: null,
+            detail: null,
             pid: null
         });
     }
     return arr;
 }
-function UsersList(data)
-{
+function UsersList(data) {
     let arr = [];
     for (var i = 0, len = data.users.length; i < len; i++) {
         let t = {};
@@ -164,7 +170,9 @@ function UsersList(data)
     if (arr.length == 0) {
         arr.push({
             label: "你来到了没有知识的荒野",
-            uid: null
+            description: null,
+            detail: null,
+            pid: null
         });
     }
     return arr;
@@ -174,5 +182,5 @@ exports.RankingList = RankingList;
 exports.ProblemsList = ProblemsList;
 exports.TrainingsList = TrainingsList;
 exports.ProblemsListInTraining = ProblemsListInTraining;
-exports.DoNotParse=DoNotParse;
-exports.UsersList=UsersList;
+exports.DoNotParse = DoNotParse;
+exports.UsersList = UsersList;
