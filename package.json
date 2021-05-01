@@ -19,7 +19,7 @@
 				"command": "luogu.ShowRankingList",
 				"title": "Show Ranking list",
 				"icon": {
-					"light": "./svg/list-light.svg",
+					"light": "./resources/svg/list-light.svg",
 					"dark": ""
 				}
 			},
@@ -27,32 +27,32 @@
 				"command": "luogu.Search",
 				"title": "Search",
 				"icon": {
-					"light": "./svg/search-light.svg",
-					"dark": "./svg/search-dark.svg"
+					"light": "./resources/svg/search-light.svg",
+					"dark": "./resources/svg/search-dark.svg"
 				}
 			},
 			{
 				"command": "luogu.SearchProblems",
 				"title": "Search Problems",
 				"icon": {
-					"light": "./svg/search-light.svg",
-					"dark": "./svg/search-dark.svg"
+					"light": "./resources/svg/search-light.svg",
+					"dark": "./resources/svg/search-dark.svg"
 				}
 			},
 			{
 				"command": "luogu.SearchProblemsSets",
 				"title": "Search Problems Sets",
 				"icon": {
-					"light": "./svg/search-light.svg",
-					"dark": "./svg/search-dark.svg"
+					"light": "./resources/svg/search-light.svg",
+					"dark": "./resources/svg/search-dark.svg"
 				}
 			},
 			{
 				"command": "luogu.SearchUsers",
 				"title": "Search Users",
 				"icon": {
-					"light": "./svg/search-light.svg",
-					"dark": "./svg/search-dark.svg"
+					"light": "./resources/svg/search-light.svg",
+					"dark": "./resources/svg/search-dark.svg"
 				}
 			}
 		],
@@ -61,7 +61,7 @@
 				{
 					"id": "luogu",
 					"title": "洛谷",
-					"icon": "./svg/beaker.svg"
+					"icon": "./resources/svg/beaker.svg"
 				}
 			]
 		},

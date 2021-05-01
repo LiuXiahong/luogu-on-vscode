@@ -27,7 +27,7 @@ function GetProblemTemplate(pid,data) {
     let inputFormat_html=converter.makeHtml(data.currentData.problem.inputFormat);
     let outputFormat_html=converter.makeHtml(data.currentData.problem.outputFormat);
     let hint_html=converter.makeHtml(data.currentData.problem.hint);
-    let preview_style=fs.readFileSync(path.resolve(__dirname,'..','html','markdown.css'));
+    let preview_style=fs.readFileSync(path.resolve(__dirname,'..','resources','html','markdown.css'));
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -50,7 +50,7 @@ function GetProblemTemplate(pid,data) {
     </head>
     <body>
         <br/>
-        <h1>${pid+' | '+data.currentTitle}</h1>
+        <h1>${pid+' '+data.currentTitle}</h1>
         <div id="background">
         <br/>
             <h2><strong>题目背景</strong></h2>
@@ -79,9 +79,9 @@ function GetProblemTemplate(pid,data) {
         <br/>
             <h2><strong>输入输出样例</strong></h2>
             <br/>
-            ${data.currentData.problem.samples[0]?'<strong>#1</strong><pre><code>'+data.currentData.problem.samples[0][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[0][1]+'</code></pre>':''}
-            ${data.currentData.problem.samples[1]?'<strong>#1</strong><pre><code>'+data.currentData.problem.samples[1][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[1][1]+'</code></pre>':''}
-            ${data.currentData.problem.samples[2]?'<strong>#1</strong><pre><code>'+data.currentData.problem.samples[2][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[2][1]+'</code></pre>':''}
+            ${data.currentData.problem.samples[0]?'<strong>#1</strong><br/><pre><code>'+data.currentData.problem.samples[0][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[0][1]+'</code></pre>':''}
+            ${data.currentData.problem.samples[1]?'<strong>#1</strong><br/><pre><code>'+data.currentData.problem.samples[1][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[1][1]+'</code></pre>':''}
+            ${data.currentData.problem.samples[2]?'<strong>#1</strong><br/><pre><code>'+data.currentData.problem.samples[2][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[2][1]+'</code></pre>':''}
         </div>
         <div id="hint">
         <br/>
