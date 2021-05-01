@@ -12,7 +12,7 @@ exports.ShowProblem = ShowProblem;
 
 async function ShowUser(uid) {
     var data=await luogu.GetLuoguApi('https://www.luogu.com.cn/user/'+uid+'?_contentOnly',null,null);
-    const panel = vscode.window.createWebviewPanel('user information','用户详情',vscode.ViewColumn.Two,{
+    const panel = vscode.window.createWebviewPanel('user information','用户详情:'+uid,vscode.ViewColumn.Two,{
         enableScripts: true
     });
     panel.webview.html=FilesDom.GetUserTemplate(String(uid),data);

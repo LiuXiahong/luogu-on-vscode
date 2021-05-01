@@ -27,7 +27,8 @@ function GetProblemTemplate(pid,data) {
     let inputFormat_html=converter.makeHtml(data.currentData.problem.inputFormat);
     let outputFormat_html=converter.makeHtml(data.currentData.problem.outputFormat);
     let hint_html=converter.makeHtml(data.currentData.problem.hint);
-    let preview_style=fs.readFileSync(path.resolve(__dirname,'..','resources','html','markdown.css'));
+    let preview_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','markdown.css'));
+    let problem_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','problem.css'));
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -46,6 +47,9 @@ function GetProblemTemplate(pid,data) {
         <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
         <style>
             ${preview_style}
+        </style>
+        <style>
+            ${problem_style}
         </style>
     </head>
     <body>
