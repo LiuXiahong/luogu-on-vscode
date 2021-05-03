@@ -1,6 +1,44 @@
 .MathJax{
     outline:0;
 }
+a:hover,a:active{
+    text-decoration:none
+}
 img{
-    border-radius: 3px
+    border-radius: 3px;
+    outline:0;
+    max-width:  478px;
+    max-height: 360px;
+}
+pre.outputFormat,
+pre.inputFormat
+{
+    display: inline-block;
+    width: 41%;
+    vertical-align:top;
+}
+pre.inputFormat{
+    margin-right: 5px;
+}
+div.information>.problem_information:first-child{
+    border-left: none;
+}
+div.information{
+    height: 45px;
+}
+div.problem_information {
+    height: 35px;
+    display: inline-block;
+    border-left: 1px solid;
+    padding: 0.8em;
+    text-align: center;
+    vertical-align:bottom;
+}
+div.float-button {
+    position: fixed;
+    height: 90px;
+    width: 40px;
+    bottom: 90px;
+    right: 50px;
+    background: #66ccff;
 }

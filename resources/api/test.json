@@ -1,124 +1,1235 @@
 {
   "code": 200,
-  "currentTemplate": "ProblemShow",
+  "currentTemplate": "UserShow",
   "currentData": {
-    "problem": {
-      "background": "\u5f3a\u70c8\u63a8\u8350[\u65b0\u7528\u6237\u5fc5\u8bfb\u5e16](\/discuss\/show\/241461)\u3002\n\n**\u4e0d\u719f\u6089\u7b97\u6cd5\u7ade\u8d5b\u7684\u9009\u624b\u8bf7\u770b\u8fd9\u91cc\uff1a**\n\n\u7b97\u6cd5\u7ade\u8d5b\u4e2d\u8981\u6c42\u7684\u8f93\u51fa\u683c\u5f0f\u4e2d\uff0c**\u4e0d\u80fd\u6709\u591a\u4f59\u7684\u5185\u5bb9**\uff0c**\u8fd9\u4e5f\u5305\u62ec\u4e86\u201c\u8bf7\u8f93\u5165\u6574\u6570a\u548cb\u201d\u8fd9\u4e00\u7c7b\u7684\u63d0\u793a\u7528\u6237\u8f93\u5165\u4fe1\u606f\u7684\u5185\u5bb9**\u3002\u82e5\u5305\u542b\u4e86\u8fd9\u4e9b\u5185\u5bb9\uff0c\u5c06\u4f1a\u88ab\u8ba4\u4e3a\u662f `Wrong Answer`\uff0c\u5373\u6d1b\u8c37\u4e0a\u7684 `WA`\u3002\u5ffd\u7565\u6bcf\u4e00\u884c\u7ed3\u5c3e\u7684\u7a7a\u683c\uff0c\u4ee5\u53ca\u6700\u540e\u4e00\u884c\u4e4b\u540e\uff0c\u591a\u4f59\u7684\u6362\u884c\u7b26\u3002\n\n\u82e5\u56e0\u6b64\u7c7b\u95ee\u9898\u51fa\u73b0\u672c\u673a\uff08\u770b\u8d77\u6765\uff09`AC`\uff0c\u63d0\u4ea4 `WA` \u7684\u73b0\u8c61\uff0c\u8bf7\u52ff\u8ba4\u4e3a\u662f\u6d1b\u8c37\u8bc4\u6d4b\u673a\u51fa\u4e86\u95ee\u9898\uff0c\u800c\u662f\u4f60\u7684\u4ee3\u7801\u4e2d\u53ef\u80fd\u5b58\u5728\u591a\u4f59\u7684\u8f93\u51fa\u4fe1\u606f\u3002\u7528\u6237\u53ef\u4ee5\u53c2\u8003\u5728\u9898\u76ee\u672b\u5c3e\u63d0\u4f9b\u7684\u4ee3\u7801\u3002\n\n\u53e6\u5916**\u8bf7\u5584\u7528\u5e94\u7528\u4e2d\u7684\u5728\u7ebf IDE \u529f\u80fd**\uff0c\u4ee5\u907f\u514d\u4e0d\u540c\u5e73\u53f0\u7684\u8bc4\u6d4b\u4e2d\u6240\u4ea7\u751f\u7684\u4e00\u4e9b\u95ee\u9898\u3002\n\n\u8fd8\u6709\u4e00\u70b9\u5f88\u91cd\u8981\u7684\u662f\uff0c\u8bf7\u4e0d\u8981\u5728\u5bf9\u5e94\u7684\u9898\u76ee\u4e0b\u9762\u53d1\u81ea\u5df1\u7684\u9898\u89e3\uff0c\u8bf7\u53d1\u5e03\u5230\u9898\u89e3\u533a\u57df\u4e2d\uff0c\u5426\u5219\u5c06\u5904\u4ee5\u5220\u9664\u6216\u7981\u8a00\u7684\u5904\u7f5a\u3002\u82e5\u53d1\u73b0\u65e0\u6cd5\u63d0\u4ea4\u9898\u89e3\u5219\u8868\u660e\u672c\u9898\u9898\u89e3\u6570\u91cf\u8fc7\u591a\u3002",
-      "description": "\u8f93\u5165\u4e24\u4e2a\u6574\u6570 $a, b$\uff0c\u8f93\u51fa\u5b83\u4eec\u7684\u548c\uff08$|a|,|b| \\le {10}^9$\uff09\u3002\n\n\u6ce8\u610f\n\n1. Pascal \u4f7f\u7528 integer \u4f1a\u7206\u6389\u54e6\uff01\n2. \u6709\u8d1f\u6570\u54e6\uff01\n3. C\/C++ \u7684 main \u51fd\u6570\u5fc5\u987b\u662f int \u7c7b\u578b\uff0c\u800c\u4e14\u6700\u540e\u8981 return 0\u3002\u8fd9\u4e0d\u4ec5\u5bf9\u6d1b\u8c37\u5176\u4ed6\u9898\u76ee\u6709\u6548\uff0c\u800c\u4e14\u4e5f\u662f NOIP\/NOI\/CSP \u6bd4\u8d5b\u7684\u8981\u6c42\uff01\n\n\u597d\u5427\uff0c\u540c\u5fd7\u4eec\uff0c\u6211\u4eec\u5c31\u4ece\u8fd9\u4e00\u9898\u5f00\u59cb\uff0c\u5411\u7740\u5927\u725b\u7684\u8def\u8fdb\u53d1\u3002\n\n> \u4efb\u4f55\u4e00\u4e2a\u4f1f\u5927\u7684\u601d\u60f3\uff0c\u90fd\u6709\u4e00\u4e2a\u5fae\u4e0d\u8db3\u9053\u7684\u5f00\u59cb\u3002\n",
-      "inputFormat": "\u4e24\u4e2a\u6574\u6570\u4ee5\u7a7a\u683c\u5206\u5f00\u3002\n",
-      "outputFormat": "\u4e00\u4e2a\u6574\u6570\u3002\n",
-      "samples": [
-        [
-          "20 30\n",
-          "50\n"
-        ]
-      ],
-      "hint": "**\u5e7f\u544a**\n\n\u6d1b\u8c37\u51fa\u54c1\u7684\u7b97\u6cd5\u6559\u6750\uff0c\u5e2e\u52a9\u60a8\u66f4\u7b80\u5355\u7684\u5b66\u4e60\u57fa\u7840\u7b97\u6cd5\u3002[\u3010\u5b98\u65b9\u7f51\u5e97\u7edd\u8d5e\u70ed\u5356\u4e2d\uff01\u3011>>>](https:\/\/item.taobao.com\/item.htm?id=637730514783)\n\n[![](https:\/\/cdn.luogu.com.cn\/upload\/image_hosting\/njc7dlng.png)](https:\/\/item.taobao.com\/item.htm?id=637730514783)\n\n**\u672c\u9898\u5404\u79cd\u8bed\u8a00\u7684\u7a0b\u5e8f\u8303\u4f8b\uff1a**\n\nC\n```c\n#include <stdio.h>\n\nint main() {\n    int a,b;\n    scanf(\"%d%d\",&a,&b);\n    printf(\"%d\", a+b);\n    return 0;\n}\n```\n----------------\n\nC++\n```cpp\n#include <iostream>\n#include <cstdio>\n\nusing namespace std;\n\nint main() {\n    int a,b;\n    cin >> a >> b;\n    cout << a+b;\n    return 0;\n}\n```\n----------------\n\nPascal\n```cpp\nvar a, b: longint;\nbegin\n    readln(a,b);\n    writeln(a+b);\nend.\n```\n-----------------\n\nPython2\n\n```cpp\ns = raw_input().split()\nprint int(s[0]) + int(s[1])\n```\n-----------------\n\nPython3\n\n```cpp\ns = input().split()\nprint(int(s[0]) + int(s[1]))\n```\n-----------------\n\nJava\n```java\nimport java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main(String args[]) throws Exception {\n        Scanner cin=new Scanner(System.in);\n        int a = cin.nextInt(), b = cin.nextInt();\n        System.out.println(a+b);\n    }\n}\n```\n-----------------\n\nJavaScript \uff08Node.js\uff09\n\n```javascript\nconst fs = require('fs')\nconst data = fs.readFileSync('\/dev\/stdin')\nconst result = data.toString('ascii').trim().split(' ').map(x => parseInt(x)).reduce((a, b) => a + b, 0)\nconsole.log(result)\nprocess.exit() \/\/ \u8bf7\u6ce8\u610f\u5fc5\u987b\u5728\u51fa\u53e3\u70b9\u5904\u52a0\u5165\u6b64\u884c\n```\n\n-----------------\n\nRuby\n\n```ruby\na, b = gets.split.map(&:to_i)\nprint a+b\n```\n\n-----------------\n\nPHP\n\n```php\n<?php\n$input = trim(file_get_contents(\"php:\/\/stdin\"));\nlist($a, $b) = explode(' ', $input);\necho $a + $b;\n```\n\n-----------------\n\nRust\n\n```rust\nuse std::io;\n\nfn main(){\n    let mut input=String::new();\n    io::stdin().read_line(&mut input).unwrap();\n    let mut s=input.trim().split(' ');\n\n    let a:i32=s.next().unwrap()\n               .parse().unwrap();\n    let b:i32=s.next().unwrap()\n               .parse().unwrap();\n    println!(\"{}\",a+b);\n}\n```\n\n-----------------\n\nGo\n\n```go\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    var a, b int\n    fmt.Scanf(\"%d%d\", &a, &b)\n    fmt.Println(a+b)\n}\n```\n\n-----------------\n\nC# Mono\n\n```cs\nusing System;\n\npublic class APlusB{\n    private static void Main(){\n        string[] input = Console.ReadLine().Split(' ');\n        Console.WriteLine(int.Parse(input[0]) + int.Parse(input[1]));\n    }\n}\n```\n\n------------------\n\nVisual Basic Mono\n\n```vb\nImports System\n\nModule APlusB\n    Sub Main()\n        Dim ins As String() = Console.ReadLine().Split(New Char(){\" \"c})\n        Console.WriteLine(Int(ins(0))+Int(ins(1)))\n    End Sub\nEnd Module\n```\n\n------------------\n\nKotlin\n\n```kotlin\nfun main(args: Array<String>) {\n    val (a, b) = readLine()!!.split(' ').map(String::toInt)\n    println(a + b)\n}\n```\n\n------------------\n\nHaskell\n\n```haskell\nmain = do\n    [a, b] <- (map read . words) `fmap` getLine\n    print (a+b)\n```\n\n------------------\n\nScala\n\n```scala\nobject Main extends App {\n    println(scala.io.StdIn.readLine().split(\" \").map(_.toInt).sum)\n}\n```\n\n------------------\n\nPerl\n\n```perl\nmy $in = <STDIN>;\nchomp $in;\n$in = [split \/[\\s,]+\/, $in];\nmy $c = $in->[0] + $in->[1];\nprint \"$c\\n\";\n```\n\n------------------\n\n\u6587\u8a00\n\n```plaintext\n\u65bd\u300crequire('fs').readFileSync\u300d\u65bc\u300c\u300c\/dev\/stdin\u300d\u300d\u3002\u540d\u4e4b\u66f0\u300c\u6578\u64da\u300d\u3002\n\u65bd\u300c(buf => buf.toString().trim())\u300d\u65bc\u300c\u6578\u64da\u300d\u3002\u6614\u4e4b\u300c\u6578\u64da\u300d\u8005\u3002\u4eca\u5176\u662f\u77e3\u3002\n\u65bd\u300c(s => s.split(' '))\u300d\u65bc\u300c\u6578\u64da\u300d\u3002\u6614\u4e4b\u300c\u6578\u64da\u300d\u8005\u3002\u4eca\u5176\u662f\u77e3\u3002\n\u6ce8\u66f0\u3002\u300c\u300c\u6587\u8a00\u5c1a\u83dc\uff0c\u7121\u5c0d\u8c61\u4e4b\u64cd\u4f5c\uff0c\u6545\u9700 JavaScript \u4e4b\u8bed\u6cd5\u300d\u300d\u3002\n\n\u592b\u300c\u6578\u64da\u300d\u4e4b\u4e00\u3002\u53d6\u4e00\u4ee5\u65bd\u300cparseInt\u300d\u3002\u540d\u4e4b\u66f0\u300c\u7532\u300d\u3002\n\u592b\u300c\u6578\u64da\u300d\u4e4b\u4e8c\u3002\u53d6\u4e00\u4ee5\u65bd\u300cparseInt\u300d\u3002\u540d\u4e4b\u66f0\u300c\u4e59\u300d\u3002\n\n\u52a0\u300c\u7532\u300d\u4ee5\u300c\u4e59\u300d\u3002\u66f8\u4e4b\u3002\n```\n",
-      "provider": {
-        "uid": 3,
-        "name": "\u6d1b\u8c37",
-        "slogan": "",
-        "badge": "",
-        "isAdmin": true,
-        "isBanned": false,
-        "color": "Purple",
-        "ccfLevel": 0
-      },
-      "attachments": [],
-      "canEdit": false,
-      "limits": {
-        "time": [
-          200,
-          200,
-          200,
-          200,
-          200
-        ],
-        "memory": [
-          131072,
-          131072,
-          131072,
-          131072,
-          131072
-        ]
-      },
-      "stdCode": "#include <iostream>\n#include <cstdio>\n\nusing namespace std;\n\nint main() {\n\tint a,b;\n\tcin >> a >> b;\n\tcout << a+b;\n\treturn 0;\n}",
-      "tags": [
-        1
-      ],
-      "wantsTranslation": false,
-      "totalSubmit": 585721,
-      "totalAccepted": 343895,
-      "flag": 5,
-      "pid": "P1001",
-      "title": "A+B Problem",
-      "difficulty": 1,
-      "fullScore": 100,
-      "type": "P"
+    "user": {
+      "registerTime": 1565934747,
+      "introduction": "#### \u5f3a\u70c8\u63a8\u8350\u6b64\u7f51\u7ad9 -> [\u70b9\u6211\u770b\u770b](https:\/\/waifulabs.com\/)\n\n\u611f\u8c22\u67d0\u5927\u4f6c\u63d0\u4f9b\uff1a\n\n![](https:\/\/ipcounter.ihcr.top\/)\n\n------\n[\u624b\u52a8\u5237\u65b0](https:\/\/www.luogu.com.cn\/user\/240275)\n\n---\n![\u8fd9\u662f\u56fe\u7247]( https:\/\/api.dongmanxingkong.com\/suijitupian\/acg\/1080p\/index.php \"Magic Gardens\")\n\n![](https:\/\/luogu.vercel.app\/api?id=240275&card_width=750)\n\n----\n\u4e0b\u9762\u4e3a\u9c81\u8fc5\u7684\u7ecf\u5178\u540d\u8a00\uff1a\n\n![](https:\/\/pic.7230.com\/Uploads\/Picture\/2017-03-02\/58b78a22ed35c.jpg)\n\n![](https:\/\/tse2-mm.cn.bing.net\/th\/id\/OIP.gT2nb4M95nGMesVfopgbPAAAAA?w=245&h=190&c=7&o=5&pid=1.7)\n\n![](https:\/\/ss0.bdstatic.com\/70cFvHSh_Q1YnxGkpoWK1HF6hhy\/it\/u=3554377933,4028216991&fm=26&gp=0.jpg)\n\n\u66b4\u529b\u51fa\u5947\u8ff9\uff0c\u9a97\u5206\u8fc7\u6837\u4f8b\u3002 \u6570\u5b66\u5148\u6253\u8868\uff0c\uff24\uff30\u770b\u8fd0\u6c14\u3002 \u7a77\u4e3e\uff34\uff2c\uff25\uff0c\u9012\u63a8\uff35\uff2b\uff25\u3002 \u6a21\u62df\uff2d\uff2c\uff25\uff0c\u8d2a\u5fc3\u8fd8\uff23\uff25\u3002 \u60f3\u8981\u9a97\u5230\u5206\uff0c\u5c31\u8981\u6709\u65b9\u6cd5\u3002 \u56fe\u8bba\u80cc\u6a21\u677f\uff0c\u6570\u8bba\u80cc\u516c\u5f0f\u3002 \u52a8\u89c4\u80cc\u65b9\u7a0b\uff0c\u9ad8\u7cbe\u80cc\u4ee3\u7801\u3002\u5982\u679c\u90fd\u6ca1\u80cc,~~\u5e72\u8106\u8f93\u6837\u4f8b~~\u3002",
+      "prize": [],
+      "background": "https:\/\/cdn.luogu.com.cn\/upload\/image_hosting\/0xs3wknt.png",
+      "blogAddress": "https:\/\/www.luogu.com.cn\/blog\/geometric\/",
+      "followingCount": 17,
+      "followerCount": 10,
+      "ranking": 18553,
+      "passedProblemCount": 386,
+      "submittedProblemCount": 1236,
+      "uid": 240275,
+      "name": "\u51e0\u4f55\u6570\u8bbaing",
+      "slogan": "\u4e0d\u8981\u56e0\u4e3a\u8d70\u5f97\u592a\u8fdc\uff0c\u5c31\u5fd8\u4e86\u5f53\u521d\uff0c\u4e3a\u4ec0\u4e48\u51fa\u53d1\u3002",
+      "badge": null,
+      "isAdmin": false,
+      "isBanned": false,
+      "color": "Blue",
+      "ccfLevel": 0
     },
-    "contest": null,
-    "discussions": [
+    "passedProblems": [
       {
-        "id": 311359,
-        "title": "\u6c42\u52a9\uff0c\u4e3a\u4ec0\u4e48\u62a5\u9519\u4e86\u5440",
-        "forum": {
-          "id": 5,
-          "name": "P1001 A+B Problem",
-          "slug": "P1001"
-        }
+        "pid": "AT3669",
+        "title": "[ABC078B] ISU",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
       },
       {
-        "id": 310520,
-        "title": "python3 \u4e3a\u4ec0\u4e48\u662fRE???",
-        "forum": {
-          "id": 5,
-          "name": "P1001 A+B Problem",
-          "slug": "P1001"
-        }
+        "pid": "AT3551",
+        "title": "\u925b\u7b46\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
       },
       {
-        "id": 309319,
-        "title": "0\u5206\u6c42\u52a9",
-        "forum": {
-          "id": 5,
-          "name": "P1001 A+B Problem",
-          "slug": "P1001"
-        }
+        "pid": "AT2695",
+        "title": "[ABC071B] Not Found\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
       },
       {
-        "id": 308079,
-        "title": "\u840c\u65b0\u6c42\u52a9\u6c34\u9898\uff01\uff01\uff01\u6837\u4f8b\u80fd\u8fc7\uff0c\u4e3a\u4ec0\u4e480\u5206",
-        "forum": {
-          "id": 5,
-          "name": "P1001 A+B Problem",
-          "slug": "P1001"
-        }
+        "pid": "AT2659",
+        "title": "[ABC068B] Break Number",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
       },
       {
-        "id": 308019,
-        "title": "\u840c\u65b0\u6c42\u52a9",
-        "forum": {
-          "id": 5,
-          "name": "P1001 A+B Problem",
-          "slug": "P1001"
-        }
+        "pid": "AT2825",
+        "title": "\u898b\u3048\u308b\u6570\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
       },
       {
-        "id": 307614,
-        "title": "\u840c\u65b0\u521a\u5b66OI\u6c42\u52a9\uff0cA+B problem 20\u5206\uff0c\u5b9e\u5728\u8c03\u4e0d\u51fa\u6765\u4e86",
-        "forum": {
-          "id": 5,
-          "name": "P1001 A+B Problem",
-          "slug": "P1001"
-        }
-      }
-    ],
-    "bookmarked": false,
-    "vjudgeUsername": null,
-    "recommendations": [
+        "pid": "AT2826",
+        "title": "\u3042\u307e\u308a",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2379",
+        "title": "[AGC015A] A+...+B Problem",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2559",
+        "title": "[ABC061A] Between Two Integers\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2331",
+        "title": "[ABC055A] Restaurant",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2157",
+        "title": "[ABC049B] \u305f\u3066\u306a\u304c \/ Thin",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2201",
+        "title": "\u93e1\u6587 \/ Mirror String",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2146",
+        "title": "[ARC063A] \u4e00\u6b21\u5143\u30ea\u30d0\u30fc\u30b7 \/ 1D Reversi",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2139",
+        "title": "[ABC046B] AtCoDeer\u304f\u3093\u3068\u30dc\u30fc\u30eb\u8272\u5857\u308a \/ Painting Balls with AtCoDeer",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2025",
+        "title": "\u5929\u4e0b\u4e00\u5408\u6210\u95a2\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1931",
+        "title": "\u25a1\u25a1\u25a1\u25a1\u25a1",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1901",
+        "title": "\u30c7\u30a3\u30b9\u30d7\u30ec\u30a4",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1876",
+        "title": "\u30c9\u30df\u30ce\u8272\u5857\u308a",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1357",
+        "title": "n^p mod m",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1864",
+        "title": "\u56de\u8ee2",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1745",
+        "title": "DISCO presents \u30c7\u30a3\u30b9\u30ab\u30d0\u30ea\u30fc\u30c1\u30e3\u30f3\u30cd\u30eb\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u30b3\u30f3\u30c6\u30b9\u30c8 2016\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1753",
+        "title": "\u30cb\u30b3\u30cb\u30b3\u6570\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1487",
+        "title": "\u30e9\u30fc\u6cb9",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1481",
+        "title": "\u30ab\u30ad",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1482",
+        "title": "Brute-force Attack",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1444",
+        "title": "\u6570\u30923\u3064\u9078\u3076\u30de\u30f3",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1359",
+        "title": "[ABC025A] 25\u500b\u306e\u6587\u5b57\u5217\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1327",
+        "title": "\u52a0\u7b97\u738b\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1309",
+        "title": "Best Body",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1301",
+        "title": "\u8db3\u3057\u7b97\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1206",
+        "title": "Indeed\u306a\u3046\uff01",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1170",
+        "title": "\u30d7\u30ed\u30b3\u30f3\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1145",
+        "title": "\u30db\u30ea\u30c9\u30c3\u30b0",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1097",
+        "title": "\u5dee\u306e\u5e73\u5747",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT945",
+        "title": "\u9ad8\u6a4b\u541b\u3068\u304a\u8089",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1058",
+        "title": "\u3068\u3066\u3082\u9577\u3044\u6587\u5b57\u5217",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1047",
+        "title": "\u5c71\u624b\u7dda",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT974",
+        "title": "\u5929\u4e0b\u4e00\u5e8f\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT920",
+        "title": "\u4e5d\u4e5d\u8db3\u3057\u7b97",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT916",
+        "title": "123\u5f15\u304d\u7b97",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT882",
+        "title": "\u304f\u3064\u304c\u304f\u3063\u3064\u304f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT870",
+        "title": "DEAD END",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT866",
+        "title": "\u4e16\u754c\u306eFizzBuzz",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT832",
+        "title": "\u77f3\u3092\u6ed1\u3089\u305b\u308b\u30b2\u30fc\u30e0",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT859",
+        "title": "\u5143\u7d20\u306e\u7cfb\u7d71\u540d",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT820",
+        "title": "\u304a\u3044\u3057\u3044\u305f\u3053\u713c\u304d\u306e\u98df\u3079\u65b9",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT836",
+        "title": "UTPC",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT811",
+        "title": "BMI\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT793",
+        "title": "AtCoder\u793e\u306e\u7d66\u6599\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT712",
+        "title": "Working for the World",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT731",
+        "title": "\u7a4d\u96ea\u6df1\u5dee\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT504",
+        "title": "\u68b1\u5305\u3067\u304d\u308b\u304b\u306a\uff1f\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT360",
+        "title": "\u96e8\u4e0a\u304c\u308a",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT314",
+        "title": "\u5143\u6c17\u306b\u304a\u4f7f\u3044\uff01\u9ad8\u6a4b\u541b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT211",
+        "title": "\u5927\u597d\u304d\u9ad8\u6a4b\u541b",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT192",
+        "title": "Wikipedia",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT193",
+        "title": "String Sorting",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT184",
+        "title": "2\u70b9\u9593\u8ddd\u96e2\u306e\u6700\u5927\u5024 ( The longest distance )",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT180",
+        "title": "1\u21921",
+        "difficulty": 6,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT163",
+        "title": "[ARC003B] \u3055\u304b\u3055\u307e\u8f9e\u66f8",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT46",
+        "title": "\u30ea\u30e2\u30b3\u30f3",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT28",
+        "title": "\u505c\u6b62\u554f\u984c",
+        "difficulty": 6,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "CF1225C",
+        "title": "p-binary",
+        "difficulty": 0,
+        "fullScore": 100,
+        "type": "CF"
+      },
+      {
+        "pid": "P1001",
+        "title": "A+B Problem",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1002",
+        "title": "[NOIP2002 \u666e\u53ca\u7ec4] \u8fc7\u6cb3\u5352",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1003",
+        "title": "[NOIP2011 \u63d0\u9ad8\u7ec4] \u94fa\u5730\u6bef",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1007",
+        "title": "\u72ec\u6728\u6865",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1008",
+        "title": "[NOIP1998 \u666e\u53ca\u7ec4] \u4e09\u8fde\u51fb",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1009",
+        "title": "[NOIP1998 \u666e\u53ca\u7ec4] \u9636\u4e58\u4e4b\u548c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1010",
+        "title": "[NOIP1998 \u666e\u53ca\u7ec4] \u5e42\u6b21\u65b9",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1011",
+        "title": "[NOIP1998 \u63d0\u9ad8\u7ec4] \u8f66\u7ad9",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1012",
+        "title": "[NOIP1998 \u63d0\u9ad8\u7ec4] \u62fc\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1014",
+        "title": "[NOIP1999 \u666e\u53ca\u7ec4] Cantor \u8868",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1015",
+        "title": "[NOIP1999 \u666e\u53ca\u7ec4] \u56de\u6587\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1025",
+        "title": "[NOIP2001 \u63d0\u9ad8\u7ec4] \u6570\u7684\u5212\u5206",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1028",
+        "title": "[NOIP2001 \u666e\u53ca\u7ec4] \u6570\u7684\u8ba1\u7b97",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1029",
+        "title": "[NOIP2001 \u666e\u53ca\u7ec4] \u6700\u5927\u516c\u7ea6\u6570\u548c\u6700\u5c0f\u516c\u500d\u6570\u95ee\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1030",
+        "title": "[NOIP2001 \u666e\u53ca\u7ec4] \u6c42\u5148\u5e8f\u6392\u5217",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1031",
+        "title": "[NOIP2002 \u63d0\u9ad8\u7ec4] \u5747\u5206\u7eb8\u724c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1033",
+        "title": "[NOIP2002 \u63d0\u9ad8\u7ec4] \u81ea\u7531\u843d\u4f53",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1035",
+        "title": "[NOIP2002 \u666e\u53ca\u7ec4] \u7ea7\u6570\u6c42\u548c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1036",
+        "title": "[NOIP2002 \u666e\u53ca\u7ec4] \u9009\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1042",
+        "title": "[NOIP2003 \u666e\u53ca\u7ec4] \u4e52\u4e53\u7403",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1044",
+        "title": "[NOIP2003 \u666e\u53ca\u7ec4] \u6808",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1046",
+        "title": "[NOIP2005 \u666e\u53ca\u7ec4] \u9676\u9676\u6458\u82f9\u679c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1047",
+        "title": "[NOIP2005 \u666e\u53ca\u7ec4] \u6821\u95e8\u5916\u7684\u6811",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1048",
+        "title": "[NOIP2005 \u666e\u53ca\u7ec4] \u91c7\u836f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1049",
+        "title": "[NOIP2001 \u666e\u53ca\u7ec4] \u88c5\u7bb1\u95ee\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1051",
+        "title": "[NOIP2005 \u63d0\u9ad8\u7ec4] \u8c01\u62ff\u4e86\u6700\u591a\u5956\u5b66\u91d1",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1055",
+        "title": "[NOIP2008 \u666e\u53ca\u7ec4] ISBN \u53f7\u7801",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1059",
+        "title": "[NOIP2006 \u666e\u53ca\u7ec4] \u660e\u660e\u7684\u968f\u673a\u6570",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1060",
+        "title": "[NOIP2006 \u666e\u53ca\u7ec4] \u5f00\u5fc3\u7684\u91d1\u660e",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1062",
+        "title": "[NOIP2006 \u666e\u53ca\u7ec4] \u6570\u5217",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1067",
+        "title": "[NOIP2009 \u666e\u53ca\u7ec4] \u591a\u9879\u5f0f\u8f93\u51fa",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1068",
+        "title": "[NOIP2009 \u666e\u53ca\u7ec4] \u5206\u6570\u7ebf\u5212\u5b9a",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1071",
+        "title": "[NOIP2009 \u63d0\u9ad8\u7ec4] \u6f5c\u4f0f\u8005",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1075",
+        "title": "[NOIP2012 \u666e\u53ca\u7ec4] \u8d28\u56e0\u6570\u5206\u89e3",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1079",
+        "title": "[NOIP2012 \u63d0\u9ad8\u7ec4] Vigen\u00e8re \u5bc6\u7801",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1085",
+        "title": "[NOIP2004 \u666e\u53ca\u7ec4] \u4e0d\u9ad8\u5174\u7684\u6d25\u6d25",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1086",
+        "title": "[NOIP2004 \u666e\u53ca\u7ec4] \u82b1\u751f\u91c7\u6458",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1088",
+        "title": "[NOIP2004 \u666e\u53ca\u7ec4] \u706b\u661f\u4eba",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1089",
+        "title": "[NOIP2004 \u63d0\u9ad8\u7ec4] \u6d25\u6d25\u7684\u50a8\u84c4\u8ba1\u5212",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1090",
+        "title": "[NOIP2004 \u63d0\u9ad8\u7ec4] \u5408\u5e76\u679c\u5b50 \/ [USACO06NOV] Fence Repair G",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1093",
+        "title": "[NOIP2007 \u666e\u53ca\u7ec4] \u5956\u5b66\u91d1",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1094",
+        "title": "[NOIP2007 \u666e\u53ca\u7ec4] \u7eaa\u5ff5\u54c1\u5206\u7ec4",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1097",
+        "title": "[NOIP2007 \u63d0\u9ad8\u7ec4] \u7edf\u8ba1\u6570\u5b57",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1098",
+        "title": "[NOIP2007 \u63d0\u9ad8\u7ec4] \u5b57\u7b26\u4e32\u7684\u5c55\u5f00",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1100",
+        "title": "\u9ad8\u4f4e\u4f4d\u4ea4\u6362",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1101",
+        "title": "\u5355\u8bcd\u65b9\u9635",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1102",
+        "title": "A-B \u6570\u5bf9",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1104",
+        "title": "\u751f\u65e5",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1113",
+        "title": "\u6742\u52a1",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1115",
+        "title": "\u6700\u5927\u5b50\u6bb5\u548c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1116",
+        "title": "\u8f66\u53a2\u91cd\u7ec4",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1125",
+        "title": "[NOIP2008 \u63d0\u9ad8\u7ec4] \u7b28\u5c0f\u7334",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1130",
+        "title": "\u7ea2\u724c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1135",
+        "title": "\u5947\u602a\u7684\u7535\u68af",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1137",
+        "title": "\u65c5\u884c\u8ba1\u5212",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1138",
+        "title": "\u7b2ck\u5c0f\u6574\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1141",
+        "title": "01\u8ff7\u5bab",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1145",
+        "title": "\u7ea6\u745f\u592b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1146",
+        "title": "\u786c\u5e01\u7ffb\u8f6c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1147",
+        "title": "\u8fde\u7eed\u81ea\u7136\u6570\u548c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1149",
+        "title": "[NOIP2008 \u63d0\u9ad8\u7ec4] \u706b\u67f4\u68d2\u7b49\u5f0f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1150",
+        "title": "Peter\u7684\u70df",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1151",
+        "title": "\u5b50\u6570\u6574\u6570",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1152",
+        "title": "\u6b22\u4e50\u7684\u8df3",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1157",
+        "title": "\u7ec4\u5408\u7684\u8f93\u51fa",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1161",
+        "title": "\u5f00\u706f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1162",
+        "title": "\u586b\u6d82\u989c\u8272",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1164",
+        "title": "\u5c0fA\u70b9\u83dc",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1165",
+        "title": "\u65e5\u5fd7\u5206\u6790",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1166",
+        "title": "\u6253\u4fdd\u9f84\u7403",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1167",
+        "title": "\u5237\u9898",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1176",
+        "title": "\u8def\u5f84\u8ba1\u65702",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1177",
+        "title": "\u3010\u6a21\u677f\u3011\u5feb\u901f\u6392\u5e8f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1179",
+        "title": "[NOIP2010 \u666e\u53ca\u7ec4] \u6570\u5b57\u7edf\u8ba1",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1185",
+        "title": "\u7ed8\u5236\u4e8c\u53c9\u6811",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1190",
+        "title": "[NOIP2010 \u666e\u53ca\u7ec4] \u63a5\u6c34\u95ee\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1192",
+        "title": "\u53f0\u9636\u95ee\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1200",
+        "title": "[USACO1.1]\u4f60\u7684\u98de\u789f\u5728\u8fd9\u513fYour Ride Is Here",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1203",
+        "title": "[USACO1.1]\u574f\u6389\u7684\u9879\u94feBroken Necklace",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1205",
+        "title": "[USACO1.2]\u65b9\u5757\u8f6c\u6362 Transformations",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1208",
+        "title": "[USACO1.3]\u6df7\u5408\u725b\u5976 Mixing Milk",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1216",
+        "title": "[USACO1.5][IOI1994]\u6570\u5b57\u4e09\u89d2\u5f62 Number Triangles",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1217",
+        "title": "[USACO1.5]\u56de\u6587\u8d28\u6570 Prime Palindromes",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1219",
+        "title": "[USACO1.5]\u516b\u7687\u540e Checker Challenge",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1223",
+        "title": "\u6392\u961f\u63a5\u6c34",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1226",
+        "title": "\u3010\u6a21\u677f\u3011\u5feb\u901f\u5e42||\u53d6\u4f59\u8fd0\u7b97",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1228",
+        "title": "\u5730\u6bef\u586b\u8865\u95ee\u9898",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1230",
+        "title": "\u667a\u529b\u5927\u51b2\u6d6a",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1244",
+        "title": "[NOI2000] \u9752\u86d9\u8fc7\u6cb3",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1255",
+        "title": "\u6570\u697c\u68af",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1259",
+        "title": "\u9ed1\u767d\u68cb\u5b50\u7684\u79fb\u52a8",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1276",
+        "title": "\u6821\u95e8\u5916\u7684\u6811\uff08\u589e\u5f3a\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1287",
+        "title": "\u76d2\u5b50\u4e0e\u7403",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1303",
+        "title": "A*B Problem",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1304",
+        "title": "\u54e5\u5fb7\u5df4\u8d6b\u731c\u60f3",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1305",
+        "title": "\u65b0\u4e8c\u53c9\u6811",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1307",
+        "title": "[NOIP2011 \u666e\u53ca\u7ec4] \u6570\u5b57\u53cd\u8f6c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1308",
+        "title": "[NOIP2011 \u666e\u53ca\u7ec4] \u7edf\u8ba1\u5355\u8bcd\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1317",
+        "title": "\u4f4e\u6d3c\u5730",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1318",
+        "title": "\u79ef\u6c34\u9762\u79ef",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1319",
+        "title": "\u538b\u7f29\u6280\u672f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1320",
+        "title": "\u538b\u7f29\u6280\u672f\uff08\u7eed\u96c6\u7248\uff09",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1321",
+        "title": "\u5355\u8bcd\u8986\u76d6\u8fd8\u539f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1328",
+        "title": "[NOIP2014 \u63d0\u9ad8\u7ec4] \u751f\u6d3b\u5927\u7206\u70b8\u7248\u77f3\u5934\u526a\u5200\u5e03",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1331",
+        "title": "\u6d77\u6218",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1359",
+        "title": "\u79df\u7528\u6e38\u8247",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1420",
+        "title": "\u6700\u957f\u8fde\u53f7",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
       {
         "pid": "P1421",
         "title": "\u5c0f\u7389\u4e70\u6587\u5177",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1422",
+        "title": "\u5c0f\u7389\u5bb6\u7684\u7535\u8d39",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1423",
+        "title": "\u5c0f\u7389\u5728\u6e38\u6cf3",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1424",
+        "title": "\u5c0f\u9c7c\u7684\u822a\u7a0b(\u6539\u8fdb\u7248)",
         "difficulty": 1,
         "fullScore": 100,
         "type": "P"
@@ -131,9 +1242,1087 @@
         "type": "P"
       },
       {
+        "pid": "P1426",
+        "title": "\u5c0f\u9c7c\u4f1a\u6709\u5371\u9669\u5417",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1427",
+        "title": "\u5c0f\u9c7c\u7684\u6570\u5b57\u6e38\u620f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1428",
+        "title": "\u5c0f\u9c7c\u6bd4\u53ef\u7231",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1433",
+        "title": "\u5403\u5976\u916a",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1434",
+        "title": "[SHOI2002]\u6ed1\u96ea",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1443",
+        "title": "\u9a6c\u7684\u904d\u5386",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1449",
+        "title": "\u540e\u7f00\u8868\u8fbe\u5f0f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1451",
+        "title": "\u6c42\u7ec6\u80de\u6570\u91cf",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1464",
+        "title": "Function",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1469",
+        "title": "\u627e\u7b77\u5b50",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1478",
+        "title": "\u9676\u9676\u6458\u82f9\u679c\uff08\u5347\u7ea7\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1480",
+        "title": "A\/B Problem",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1498",
+        "title": "\u5357\u86ee\u56fe\u817e",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1507",
+        "title": "NASA\u7684\u98df\u7269\u8ba1\u5212",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1510",
+        "title": "\u7cbe\u536b\u586b\u6d77",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1536",
+        "title": "\u6751\u6751\u901a",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1540",
+        "title": "[NOIP2010 \u63d0\u9ad8\u7ec4] \u673a\u5668\u7ffb\u8bd1",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1551",
+        "title": "\u4eb2\u621a",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1553",
+        "title": "\u6570\u5b57\u53cd\u8f6c\uff08\u5347\u7ea7\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1554",
+        "title": "\u68a6\u4e2d\u7684\u7edf\u8ba1",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1563",
+        "title": "[NOIP2016 \u63d0\u9ad8\u7ec4] \u73a9\u5177\u8c1c\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1567",
+        "title": "\u7edf\u8ba1\u5929\u6570",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1569",
+        "title": "Generic Cow Protests",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1576",
+        "title": "\u6700\u5c0f\u82b1\u8d39",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1579",
+        "title": "\u54e5\u5fb7\u5df4\u8d6b\u731c\u60f3\uff08\u5347\u7ea7\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1583",
+        "title": "\u9b54\u6cd5\u7167\u7247",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1596",
+        "title": "[USACO10OCT]Lake Counting S",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1597",
+        "title": "\u8bed\u53e5\u89e3\u6790",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1598",
+        "title": "\u5782\u76f4\u67f1\u72b6\u56fe",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1601",
+        "title": "A+B Problem\uff08\u9ad8\u7cbe\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1603",
+        "title": "\u65af\u8bfa\u767b\u7684\u5bc6\u7801",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1605",
+        "title": "\u8ff7\u5bab",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1614",
+        "title": "\u7231\u4e0e\u6101\u7684\u5fc3\u75db",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1615",
+        "title": "\u897f\u6e38\u8bb0\u516c\u53f8",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1616",
+        "title": "\u75af\u72c2\u7684\u91c7\u836f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1618",
+        "title": "\u4e09\u8fde\u51fb\uff08\u5347\u7ea7\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1629",
+        "title": "\u90ae\u9012\u5458\u9001\u4fe1",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1634",
+        "title": "\u79bd\u517d\u7684\u4f20\u67d3\u75c5",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1657",
+        "title": "\u9009\u4e66",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1678",
+        "title": "\u70e6\u607c\u7684\u9ad8\u8003\u5fd7\u613f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1679",
+        "title": "\u795e\u5947\u7684\u56db\u6b21\u65b9\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1683",
+        "title": "\u5165\u95e8",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1691",
+        "title": "\u6709\u91cd\u590d\u5143\u7d20\u7684\u6392\u5217\u95ee\u9898\u3010\u9519\u9898\u5df2\u9690\u85cf\u3011",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1706",
+        "title": "\u5168\u6392\u5217\u95ee\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1720",
+        "title": "\u6708\u843d\u4e4c\u557c\u7b97\u94b1\uff08\u6590\u6ce2\u90a3\u5951\u6570\u5217\uff09",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1727",
+        "title": "\u8ba1\u7b97\u03c0",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1739",
+        "title": "\u8868\u8fbe\u5f0f\u62ec\u53f7\u5339\u914d",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1757",
+        "title": "\u901a\u5929\u4e4b\u5206\u7ec4\u80cc\u5305",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1765",
+        "title": "\u624b\u673a",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1781",
+        "title": "\u5b87\u5b99\u603b\u7edf",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1784",
+        "title": "\u6570\u72ec",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1802",
+        "title": "5\u500d\u7ecf\u9a8c\u65e5",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1803",
+        "title": "\u51cc\u4e71\u7684yyy \/ \u7ebf\u6bb5\u8986\u76d6",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1807",
+        "title": "\u6700\u957f\u8def",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1827",
+        "title": "[USACO3.4]\u7f8e\u56fd\u8840\u7edf American Heritage",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1832",
+        "title": "A+B Problem\uff08\u518d\u5347\u7ea7\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1853",
+        "title": "\u6295\u8d44\u7684\u6700\u5927\u6548\u76ca",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1873",
+        "title": "\u780d\u6811",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1888",
+        "title": "\u4e09\u89d2\u51fd\u6570",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1908",
+        "title": "\u9006\u5e8f\u5bf9",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1909",
+        "title": "[NOIP2016 \u666e\u53ca\u7ec4] \u4e70\u94c5\u7b14",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1910",
+        "title": "L\u56fd\u7684\u6218\u6597\u4e4b\u95f4\u8c0d",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1914",
+        "title": "\u5c0f\u4e66\u7ae5\u2014\u2014\u51ef\u6492\u5bc6\u7801",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1926",
+        "title": "\u5c0f\u4e66\u7ae5\u2014\u2014\u5237\u9898\u5927\u519b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1928",
+        "title": "\u5916\u661f\u5bc6\u7801",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1932",
+        "title": "A+B  A-B  A*B  A\/B A%B Problem",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1957",
+        "title": "\u53e3\u7b97\u7ec3\u4e60\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1964",
+        "title": "\u3010mc\u751f\u5b58\u3011\u5356\u4e1c\u897f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1968",
+        "title": "\u7f8e\u5143\u6c47\u7387",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1980",
+        "title": "[NOIP2013 \u666e\u53ca\u7ec4] \u8ba1\u6570\u95ee\u9898",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1981",
+        "title": "[NOIP2013 \u666e\u53ca\u7ec4] \u8868\u8fbe\u5f0f\u6c42\u503c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1990",
+        "title": "\u8986\u76d6\u5899\u58c1",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1996",
+        "title": "\u7ea6\u745f\u592b\u95ee\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2005",
+        "title": "A\/B Problem II",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2010",
+        "title": "[NOIP2016 \u666e\u53ca\u7ec4] \u56de\u6587\u65e5\u671f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2021",
+        "title": "faebdc\u73a9\u6251\u514b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2032",
+        "title": "\u626b\u63cf",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2036",
+        "title": "[COCI2008-2009#2] PERKET",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2058",
+        "title": "[NOIP2016 \u666e\u53ca\u7ec4] \u6d77\u6e2f",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2066",
+        "title": "\u673a\u5668\u5206\u914d",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2085",
+        "title": "\u6700\u5c0f\u51fd\u6570\u503c",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2089",
+        "title": "\u70e4\u9e21",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1855",
+        "title": "\u69a8\u53d6kkksc03",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2118",
+        "title": "[NOIP2014 \u666e\u53ca\u7ec4] \u6bd4\u4f8b\u7b80\u5316",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2142",
+        "title": "\u9ad8\u7cbe\u5ea6\u51cf\u6cd5",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2181",
+        "title": "\u5bf9\u89d2\u7ebf",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2196",
+        "title": "[NOIP1996 \u63d0\u9ad8\u7ec4] \u6316\u5730\u96f7",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2239",
+        "title": "[NOIP2014 \u666e\u53ca\u7ec4] \u87ba\u65cb\u77e9\u9635",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2241",
+        "title": "\u7edf\u8ba1\u65b9\u5f62\uff08\u6570\u636e\u52a0\u5f3a\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2251",
+        "title": "\u8d28\u91cf\u68c0\u6d4b",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2141",
+        "title": "[NOIP2014 \u666e\u53ca\u7ec4] \u73e0\u5fc3\u7b97\u6d4b\u9a8c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2327",
+        "title": "[SCOI2005]\u626b\u96f7",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2370",
+        "title": "yyy2015c01 \u7684 U \u76d8",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2394",
+        "title": "yyy loves Chemistry I",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2393",
+        "title": "yyy loves Maths II",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2392",
+        "title": "kkksc03\u8003\u524d\u4e34\u65f6\u62b1\u4f5b\u811a",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2404",
+        "title": "\u81ea\u7136\u6570\u7684\u62c6\u5206\u95ee\u9898",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2415",
+        "title": "\u96c6\u5408\u6c42\u548c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2419",
+        "title": "[USACO08JAN]Cow Contest S",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2433",
+        "title": "\u3010\u6df1\u57fa1-2\u3011\u5c0f\u5b66\u6570\u5b66 N \u5408\u4e00",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2437",
+        "title": "\u871c\u8702\u8def\u7ebf",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2626",
+        "title": "[NOIP1997 \u666e\u53ca\u7ec4] \u6590\u6ce2\u90a3\u5951\u6570\u5217\uff08\u5347\u7ea7\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2550",
+        "title": "[AHOI2001]\u5f69\u7968\u6447\u5956",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2615",
+        "title": "[NOIP2015 \u63d0\u9ad8\u7ec4] \u795e\u5947\u7684\u5e7b\u65b9",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3951",
+        "title": "[NOIP2017 \u63d0\u9ad8\u7ec4] \u5c0f\u51ef\u7684\u7591\u60d1 \/ [\u84dd\u6865\u676f 2013 \u7701] \u4e70\u4e0d\u5230\u7684\u6570\u76ee",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3954",
+        "title": "[NOIP2017 \u666e\u53ca\u7ec4] \u6210\u7ee9",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2639",
+        "title": "[USACO09OCT]Bessie's Weight Problem G",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2663",
+        "title": "\u8d8a\u8d8a\u7684\u7ec4\u961f",
+        "difficulty": 2,
+        "fullScore": 200,
+        "type": "P"
+      },
+      {
+        "pid": "P2669",
+        "title": "[NOIP2015 \u666e\u53ca\u7ec4] \u91d1\u5e01",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2670",
+        "title": "[NOIP2015 \u666e\u53ca\u7ec4] \u626b\u96f7\u6e38\u620f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2672",
+        "title": "[NOIP2015 \u666e\u53ca\u7ec4] \u63a8\u9500\u5458",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2676",
+        "title": "[USACO07DEC]Bookshelf B",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2719",
+        "title": "\u641e\u7b11\u4e16\u754c\u676f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2722",
+        "title": "[USACO3.1]\u603b\u5206 Score Inflation",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2788",
+        "title": "\u6570\u5b661\uff08math1\uff09- \u52a0\u51cf\u7b97\u5f0f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3371",
+        "title": "\u3010\u6a21\u677f\u3011\u5355\u6e90\u6700\u77ed\u8def\u5f84\uff08\u5f31\u5316\u7248\uff09",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3372",
+        "title": "\u3010\u6a21\u677f\u3011\u7ebf\u6bb5\u6811 1",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3374",
+        "title": "\u3010\u6a21\u677f\u3011\u6811\u72b6\u6570\u7ec4 1",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3370",
+        "title": "\u3010\u6a21\u677f\u3011\u5b57\u7b26\u4e32\u54c8\u5e0c",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3383",
+        "title": "\u3010\u6a21\u677f\u3011\u7ebf\u6027\u7b5b\u7d20\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2807",
+        "title": "\u4e09\u89d2\u5f62\u8ba1\u6570",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2837",
+        "title": "[USACO08FEB]Dining Cows B",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2422",
+        "title": "\u826f\u597d\u7684\u611f\u89c9",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2871",
+        "title": "[USACO07DEC]Charm Bracelet S",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2895",
+        "title": "[USACO08FEB]Meteor Shower S",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2911",
+        "title": "[USACO08OCT]Bovine Bones G",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2925",
+        "title": "[USACO08DEC]Hay For Sale S",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2955",
+        "title": "[USACO09OCT]Even? Odd? G",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2957",
+        "title": "[USACO09OCT]Barn Echoes G",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3009",
+        "title": "[USACO11JAN]Profits S",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3397",
+        "title": "\u5730\u6bef",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3392",
+        "title": "\u6d82\u56fd\u65d7",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
         "pid": "P1000",
         "title": "\u8d85\u7ea7\u739b\u4e3d\u6e38\u620f",
         "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3612",
+        "title": "[USACO17JAN]Secret Cow Code S",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5143",
+        "title": "\u6500\u722c\u8005",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3741",
+        "title": "honoka\u7684\u952e\u76d8",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3742",
+        "title": "umi\u7684\u51fd\u6570",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3799",
+        "title": "\u5996\u68a6\u62fc\u6728\u68d2",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3811",
+        "title": "\u3010\u6a21\u677f\u3011\u4e58\u6cd5\u9006\u5143",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3865",
+        "title": "\u3010\u6a21\u677f\u3011ST\u8868",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3908",
+        "title": "\u6570\u5217\u4e4b\u5f02\u6216",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3912",
+        "title": "\u7d20\u6570\u4e2a\u6570",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4017",
+        "title": "\u6700\u5927\u98df\u7269\u94fe\u8ba1\u6570",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4325",
+        "title": "[COCI2006-2007#1] Modulo",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4413",
+        "title": "[COCI2006-2007#2] R2",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4414",
+        "title": "[COCI2006-2007#2] ABC",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4956",
+        "title": "[COCI2017-2018#6] Davor",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4779",
+        "title": "\u3010\u6a21\u677f\u3011\u5355\u6e90\u6700\u77ed\u8def\u5f84\uff08\u6807\u51c6\u7248\uff09",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4942",
+        "title": "\u5c0f\u51ef\u7684\u6570\u5b57",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4924",
+        "title": "[1007]\u9b54\u6cd5\u5c11\u5973\u5c0fScarlet",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5015",
+        "title": "[NOIP2018 \u666e\u53ca\u7ec4] \u6807\u9898\u7edf\u8ba1",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5461",
+        "title": "\u8d66\u514d\u6218\u4fd8",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5638",
+        "title": "\u3010CSGRound2\u3011\u5149\u9a93\u8005\u7684\u8363\u8000",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5660",
+        "title": "[CSP-J2019] \u6570\u5b57\u6e38\u620f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5662",
+        "title": "[CSP-J2019] \u7eaa\u5ff5\u54c1",
+        "difficulty": 3,
         "fullScore": 100,
         "type": "P"
       },
@@ -150,13 +2339,592 @@
         "difficulty": 1,
         "fullScore": 100,
         "type": "P"
+      },
+      {
+        "pid": "P5705",
+        "title": "\u3010\u6df1\u57fa2.\u4f8b7\u3011\u6570\u5b57\u53cd\u8f6c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5706",
+        "title": "\u3010\u6df1\u57fa2.\u4f8b8\u3011\u518d\u5206\u80a5\u5b85\u6c34",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5708",
+        "title": "\u3010\u6df1\u57fa2.\u4e602\u3011\u4e09\u89d2\u5f62\u9762\u79ef",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5709",
+        "title": "\u3010\u6df1\u57fa2.\u4e606\u3011Apples Prologue",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5710",
+        "title": "\u3010\u6df1\u57fa3.\u4f8b2\u3011\u6570\u7684\u6027\u8d28",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5711",
+        "title": "\u3010\u6df1\u57fa3.\u4f8b3\u3011\u95f0\u5e74\u5224\u65ad",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5712",
+        "title": "\u3010\u6df1\u57fa3.\u4f8b4\u3011Apples",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5713",
+        "title": "\u3010\u6df1\u57fa3.\u4f8b5\u3011\u6d1b\u8c37\u56e2\u961f\u7cfb\u7edf\t",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5714",
+        "title": "\u3010\u6df1\u57fa3.\u4f8b7\u3011\u80a5\u80d6\u95ee\u9898",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5715",
+        "title": "\u3010\u6df1\u57fa3.\u4f8b8\u3011\u4e09\u4f4d\u6570\u6392\u5e8f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5716",
+        "title": "\u3010\u6df1\u57fa3.\u4f8b9\u3011\u6708\u4efd\u5929\u6570",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5717",
+        "title": "\u3010\u6df1\u57fa3.\u4e608\u3011\u4e09\u89d2\u5f62\u5206\u7c7b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5718",
+        "title": "\u3010\u6df1\u57fa4.\u4f8b2\u3011\u627e\u6700\u5c0f\u503c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5719",
+        "title": "\u3010\u6df1\u57fa4.\u4f8b3\u3011\u5206\u7c7b\u5e73\u5747",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5720",
+        "title": "\u3010\u6df1\u57fa4.\u4f8b4\u3011\u4e00\u5c3a\u4e4b\u68f0",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5721",
+        "title": "\u3010\u6df1\u57fa4.\u4f8b6\u3011\u6570\u5b57\u76f4\u89d2\u4e09\u89d2\u5f62",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5722",
+        "title": "\u3010\u6df1\u57fa4.\u4f8b11\u3011\u6570\u5217\u6c42\u548c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5723",
+        "title": "\u3010\u6df1\u57fa4.\u4f8b13\u3011\u8d28\u6570\u53e3\u888b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5681",
+        "title": "[CSP-J2019 \u6c5f\u897f] \u9762\u79ef",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5724",
+        "title": "\u3010\u6df1\u57fa4.\u4e605\u3011\u6c42\u6781\u5dee",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5727",
+        "title": "\u3010\u6df1\u57fa5.\u4f8b3\u3011\u51b0\u96f9\u731c\u60f3",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5728",
+        "title": "\u3010\u6df1\u57fa5.\u4f8b5\u3011\u65d7\u9f13\u76f8\u5f53\u7684\u5bf9\u624b",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5729",
+        "title": "\u3010\u6df1\u57fa5.\u4f8b7\u3011\u5de5\u827a\u54c1\u5236\u4f5c",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5731",
+        "title": "\u3010\u6df1\u57fa5.\u4e606\u3011\u86c7\u5f62\u65b9\u9635",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5732",
+        "title": "\u3010\u6df1\u57fa5.\u4e607\u3011\u6768\u8f89\u4e09\u89d2",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5733",
+        "title": "\u3010\u6df1\u57fa6.\u4f8b1\u3011\u81ea\u52a8\u4fee\u6b63",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5734",
+        "title": "\u3010\u6df1\u57fa6.\u4f8b6\u3011\u6587\u5b57\u5904\u7406\u8f6f\u4ef6",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5735",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b1\u3011\u8ddd\u79bb\u51fd\u6570",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5736",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b2\u3011\u8d28\u6570\u7b5b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5737",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b3\u3011\u95f0\u5e74\u5c55\u793a",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5738",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b4\u3011\u6b4c\u5531\u6bd4\u8d5b",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5739",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b7\u3011\u8ba1\u7b97\u9636\u4e58",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5740",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b9\u3011\u6700\u5389\u5bb3\u7684\u5b66\u751f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5741",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b10\u3011\u65d7\u9f13\u76f8\u5f53\u7684\u5bf9\u624b - \u52a0\u5f3a\u7248",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5742",
+        "title": "\u3010\u6df1\u57fa7.\u4f8b11\u3011\u8bc4\u7b49\u7ea7",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5743",
+        "title": "\u3010\u6df1\u57fa7.\u4e608\u3011\u7334\u5b50\u5403\u6843",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5744",
+        "title": "\u3010\u6df1\u57fa7.\u4e609\u3011\u57f9\u8bad",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1271",
+        "title": "\u3010\u6df1\u57fa9.\u4f8b1\u3011\u9009\u4e3e\u5b66\u751f\u4f1a",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1923",
+        "title": "\u3010\u6df1\u57fa9.\u4f8b4\u3011\u6c42\u7b2c k \u5c0f\u7684\u6570",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2249",
+        "title": "\u3010\u6df1\u57fa13.\u4f8b1\u3011\u67e5\u627e",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3156",
+        "title": "\u3010\u6df1\u57fa15.\u4f8b1\u3011\u8be2\u95ee\u5b66\u53f7",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3613",
+        "title": "\u3010\u6df1\u57fa15.\u4f8b2\u3011\u5bc4\u5305\u67dc",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5726",
+        "title": "\u3010\u6df1\u57fa4.\u4e609\u3011\u6253\u5206",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P6145",
+        "title": "[USACO20FEB]Timeline G",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P6188",
+        "title": "[NOI Online #1 \u5165\u95e8\u7ec4] \u6587\u5177\u8ba2\u8d2d",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P6474",
+        "title": "[NOI Online #2 \u5165\u95e8\u7ec4] \u8346\u8f72\u523a\u79e6\u738b",
+        "difficulty": 5,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P6473",
+        "title": "[NOI Online #2 \u5165\u95e8\u7ec4] \u672a\u4e86",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P6565",
+        "title": "[NOI Online #3 \u5165\u95e8\u7ec4] \u6700\u6025\u6551\u52a9",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P6566",
+        "title": "[NOI Online #3 \u5165\u95e8\u7ec4] \u89c2\u661f",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P6567",
+        "title": "[NOI Online #3 \u5165\u95e8\u7ec4] \u4e70\u8868",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "SP1",
+        "title": "TEST - Life, the Universe, and Everything",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "SP"
+      },
+      {
+        "pid": "SP2",
+        "title": "PRIME1 - Prime Generator",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "SP"
+      },
+      {
+        "pid": "SP11",
+        "title": "FCTRL - Factorial",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "SP"
+      },
+      {
+        "pid": "SP1724",
+        "title": "TRICOUNT - Counting Triangles",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "SP"
+      },
+      {
+        "pid": "UVA532",
+        "title": "Dungeon Master",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "UVA"
       }
     ],
-    "lastLanguage": 0,
-    "lastCode": "",
-    "privilegedTeams": [],
-    "userTranslation": null
+    "submittedProblems": [
+      {
+        "pid": "AT2320",
+        "title": "\u25cb\u00d7\u30d6\u30ed\u30c3\u30af\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2151",
+        "title": "[ABC048B] Between a and b ...\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT2001",
+        "title": "[AGC003A] Wanna go back home",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT896",
+        "title": "\u5e45\u512a\u5148\u63a2\u7d22",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1476",
+        "title": "\u7d20\u6570\u5224\u5b9a",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT1071",
+        "title": "haruki \u306e\u899a\u9192\u3081",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT807",
+        "title": "\u7d20\u6570\u3001\u30b3\u30f3\u30c6\u30b9\u30c8\u3001\u7d20\u6570\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT786",
+        "title": "\u6574\u6570\u5272\u308a\u7b97\u3010\u8fc7\u6c34\u5df2\u9690\u85cf\u3011",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT248",
+        "title": "\u304a\u6c17\u306b\u5165\u308a\u306e\u65702(Favorite Number2)",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT240",
+        "title": "\u7b97\u76e4\u306e\u66f8",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT168",
+        "title": "\u81ea\u5b85\u304b\u3089\u306e\u8131\u51fa",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "AT54",
+        "title": "\u5272\u308a\u5207\u308c\u308b\u65e5\u4ed8",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "AT"
+      },
+      {
+        "pid": "P1019",
+        "title": "[NOIP2000 \u63d0\u9ad8\u7ec4] \u5355\u8bcd\u63a5\u9f99",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1309",
+        "title": "[NOIP2011 \u666e\u53ca\u7ec4] \u745e\u58eb\u8f6e",
+        "difficulty": 3,
+        "fullScore": 150,
+        "type": "P"
+      },
+      {
+        "pid": "P1395",
+        "title": "\u4f1a\u8bae",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1518",
+        "title": "[USACO2.4]\u4e24\u53ea\u5854\u59c6\u6c83\u65af\u725b The Tamworth Two",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1604",
+        "title": "B\u8fdb\u5236\u661f\u7403",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1776",
+        "title": "\u5b9d\u7269\u7b5b\u9009",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1833",
+        "title": "\u6a31\u82b1",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1878",
+        "title": "\u821e\u8e48\u8bfe",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P1892",
+        "title": "[BOI2003]\u56e2\u4f19",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P2006",
+        "title": "\u8d75\u795e\u725b\u7684\u6e38\u620f",
+        "difficulty": 1,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P3955",
+        "title": "[NOIP2017 \u666e\u53ca\u7ec4] \u56fe\u4e66\u7ba1\u7406\u5458",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5146",
+        "title": "\u6700\u5927\u5dee\u503c",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P4305",
+        "title": "[JLOI2011]\u4e0d\u91cd\u590d\u6570\u5b57",
+        "difficulty": 4,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5016",
+        "title": "[NOIP2018 \u666e\u53ca\u7ec4] \u9f99\u864e\u6597",
+        "difficulty": 2,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5569",
+        "title": "[SDOI2008]\u77f3\u5b50\u5408\u5e76",
+        "difficulty": 5,
+        "fullScore": 100,
+        "type": "P"
+      },
+      {
+        "pid": "P5730",
+        "title": "\u3010\u6df1\u57fa5.\u4f8b10\u3011\u663e\u793a\u5c4f",
+        "difficulty": 3,
+        "fullScore": 100,
+        "type": "P"
+      }
+    ]
   },
-  "currentTitle": "A+B Problem",
+  "currentTitle": "\u4e2a\u4eba\u4e2d\u5fc3",
   "currentTheme": null
 }

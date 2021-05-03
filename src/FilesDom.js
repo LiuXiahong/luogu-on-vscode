@@ -29,6 +29,10 @@ function GetProblemTemplate(pid,data) {
     let hint_html=converter.makeHtml(data.currentData.problem.hint);
     let preview_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','markdown.css'));
     let problem_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','problem.css'));
+    let min_time_limit=Math.min(...data.currentData.problem.limits.time);
+    let max_time_limit=Math.max(...data.currentData.problem.limits.time);
+    let min_memory_limit=Math.min(...data.currentData.problem.limits.memory);
+    let max_memory_limit=Math.max(...data.currentData.problem.limits.memory);
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -37,14 +41,15 @@ function GetProblemTemplate(pid,data) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-            tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            processEscapes: true
-            }
-            });
-        </script>
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+                MathJax.Hub.Config({
+                tex2jax: {
+                inlineMath: [ ['$','$'],['$$','$$'] ],
+                processEscapes: true
+                }
+                });
+            </script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
         <style>
             ${preview_style}
         </style>
@@ -52,47 +57,70 @@ function GetProblemTemplate(pid,data) {
             ${problem_style}
         </style>
     </head>
+
     <body>
-        <br/>
+        <br />
         <h1>${pid+' '+data.currentTitle}</h1>
-        <div id="background">
+        <div class="information">
+            <div class="problem_information">
+                提交<br/>
+                ${data.currentData.problem.totalSubmit}
+            </div>
+            <div class="problem_information">
+                通过<br/>${data.currentData.problem.totalAccepted}
+            </div>
+            <div class="problem_information">
+                时间限制<br/>
+                ${min_time_limit==max_time_limit?`${min_time_limit/1000}s`:`${min_time_limit/1000}s~${max_time_limit/1000}s`}
+            </div>
+            <div class="problem_information">
+                内存限制<br/>
+                ${min_memory_limit==max_memory_limit?`${min_memory_limit/1024}MB`:`${min_memory_limit/1024}MB~${max_memory_limit/1024}MB`}
+            </div>
+        </div>
         <br/>
+        <div class="wantsTranslation">
+            ${data.currentData.problem.wantsTranslation?`<blockquote><p><strong>本题征求翻译。</strong>如果您能提供翻译或者题意简述，请<a href="https://www.luogu.com.cn/problem/${pid}#translate">提交翻译</a>，感谢您的贡献。</p></blockquote>`:``}
+        </div>
+        <div id="background">
+            <br />
             <h2><strong>题目背景</strong></h2>
-            <br/>
+            <br />
             ${background_html}
         </div>
         <div id="description">
-        <br/>
+            <br />
             <h2><strong>题目描述</strong></h2>
-            <br/>
+            <br />
             ${description_html}
         </div>
         <div id="inputFormat">
-        <br/>
+            <br />
             <h2><strong>输入格式</strong></h2>
-            <br/>
+            <br />
             ${inputFormat_html}
         </div>
         <div id="outputFormat">
-        <br/>
+            <br />
             <h2><strong>输出格式</strong></h2>
-            <br/>
+            <br />
             ${outputFormat_html}
         </div>
         <div id="samples">
-        <br/>
+            <br />
             <h2><strong>输入输出样例</strong></h2>
-            <br/>
-            ${data.currentData.problem.samples[0]?'<strong>#1</strong><br/><pre><code>'+data.currentData.problem.samples[0][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[0][1]+'</code></pre>':''}
-            ${data.currentData.problem.samples[1]?'<strong>#1</strong><br/><pre><code>'+data.currentData.problem.samples[1][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[1][1]+'</code></pre>':''}
-            ${data.currentData.problem.samples[2]?'<strong>#1</strong><br/><pre><code>'+data.currentData.problem.samples[2][0]+'</code></pre><pre><code>'+data.currentData.problem.samples[2][1]+'</code></pre>':''}
+            <br />
+            ${data.currentData.problem.samples[0]?'<h3>#1</h3><pre class="inputFormat"><code>'+data.currentData.problem.samples[0][0]+'</code></pre><pre class="outputFormat"><code>'+data.currentData.problem.samples[0][1]+'</code></pre>':''}
+            ${data.currentData.problem.samples[1]?'<h3>#2</h3> <pre class="inputFormat"><code>'+data.currentData.problem.samples[1][0]+'</code></pre><pre class="outputFormat"><code>'+data.currentData.problem.samples[1][1]+'</code></pre>':''}
+            ${data.currentData.problem.samples[2]?'<h3>#3</h3><pre class="inputFormat"><code>'+data.currentData.problem.samples[2][0]+'</code></pre><pre class="outputFormat"><code>'+data.currentData.problem.samples[2][1]+'</code></pre>':''}
         </div>
         <div id="hint">
-        <br/>
+            <br />
             <h2><strong>说明/提示</strong></h2>
-            <br/>
+            <br />
             ${hint_html}
         </div>
+        <div class="float-button"></div>
     </body>
 
     </html>

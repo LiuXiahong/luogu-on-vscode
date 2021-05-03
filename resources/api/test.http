@@ -8,14 +8,6 @@ GET {{luogu}}/training/list?keyword=p&type=select&_contentOnly
 ###
 GET {{luogu}}/training/9?_contentOnly
 ###
-POST www.luogu.com.cn/api/chat/new
-referer: https://www.luogu.com.cn
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4449.0 Safari/537.36 Edg/91.0.838.3
-X-CSRF-Token: 1617515289:S/+YnQ4209EKIXZXl8v+P7jRsWMUsijURHPLdzDDy7c=
-
-{
-    "content":"B",
-    "user":"405742"
-}
-###
 GET {{luogu}}/problem/P1001?_contentOnly
+###
+GET {{luogu}}/user/240275?_contentOnly
