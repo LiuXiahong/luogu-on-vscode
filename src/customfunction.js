@@ -16,29 +16,31 @@ const unicode = {
         return ret;
     }
 }
-function ConsoleLog(data) {
-    var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
-    console.log(`[${time}] ${data}`);
+exports.unicode = unicode;
+
+const Console = {
+    Log: function (data) {
+        var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+        console.log(`[${time}] ${data}`);
+    },
+    Error: function (data) {
+        var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+        console.error(`[${time}] ${data}`);
+    }
 }
-exports.ConsoleLog = ConsoleLog;
-function ConsoleError(data) {
-    var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
-    console.error(`[${time}] ${data}`);
-}
-exports.ConsoleError = ConsoleError;
+exports.Console=Console;
+
 function ShowRankingList(page_number) {
     let url = 'https://www.luogu.com.cn/ranking?_contentOnly';
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, page_number, luogu.RankingList)).then(value => {
         if (value != undefined && value.uid != null) {
-            if (value.label == "上一页") {
-                ShowRankingList(page_number - 1);
-            }
-            else if (value.label == "下一页") {
-                ShowRankingList(page_number + 1);
-            }
-            else {
-                luoguview.ShowUser(String(value.uid));
-            }
+            luoguview.ShowUser(String(value.uid));
+        }
+        if (value.label == "上一页") {
+            ShowRankingList(page_number - 1);
+        }
+        else if (value.label == "下一页") {
+            ShowRankingList(page_number + 1);
         }
     });
     return;
@@ -48,14 +50,14 @@ exports.ShowRankingList = ShowRankingList;
 function SearchProblems(keyword, page_number) {
     let url = 'https://www.luogu.com.cn/problem/list?_contentOnly&keyword=' + keyword;
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, page_number, luogu.ProblemsList)).then(value => {
+        if (value != undefined && value.pid != null) {
+            luoguview.ShowProblem(value.pid);
+        }
         if (value.label == "上一页") {
             SearchProblems(keyword, page_number - 1);
         }
         else if (value.label == "下一页") {
             SearchProblems(keyword, page_number + 1);
-        } 
-        if (value != undefined && value.pid != null) {
-            luoguview.ShowProblem(value.pid);
         }
     });
     return;
@@ -72,16 +74,15 @@ function SearchTrainings(keyword, type, page_number) {
     }
     vscode.window.showQuickPick(luogu.GetLuoguApi(url, page_number, luogu.TrainingsList)).then(value => {
         if (value != undefined && value.id != null) {
-            if (value.label == "上一页") {
-                SearchTrainings(keyword, type, page_number - 1);
-            }
-            else if (value.label == "下一页") {
-                SearchTrainings(keyword, type, page_number + 1);
-            }
-            else {
-                SearchProblemListInTraining(value.id);
-            }
+            SearchProblemListInTraining(value.id);
         }
+        if (value.label == "上一页") {
+            SearchTrainings(keyword, type, page_number - 1);
+        }
+        else if (value.label == "下一页") {
+            SearchTrainings(keyword, type, page_number + 1);
+        }
+
     });
     return;
 }

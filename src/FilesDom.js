@@ -1,7 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 const showdown =require('showdown');
+const converter = new showdown.Converter();
+const preview_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','markdown.css'));
+const problem_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','problem.css'));
 function GetUserTemplate(uid,data) {
+    let introduction_html=converter.makeHtml(data.currentData.user.introduction)
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -9,26 +13,44 @@ function GetUserTemplate(uid,data) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/x-mathjax-config">
+                MathJax.Hub.Config({
+                tex2jax: {
+                inlineMath: [ ['$','$'],['$$','$$'] ],
+                processEscapes: true
+                }
+                });
+            </script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+        <style>
+            ${preview_style}
+        </style>
+        <style>
+            ${problem_style}
+        </style>
     </head>
 
     <body>
         <div id="background">
+            <img src="${data.currentData.user.background}"
+        </div>
+        <div id="introduction">
+            ${introduction_html}
         </div>
     </body>
 
-</html>
+    </html>
     `
 }
 exports.GetUserTemplate = GetUserTemplate;
 function GetProblemTemplate(pid,data) {
-    let converter = new showdown.Converter();
     let background_html=converter.makeHtml(data.currentData.problem.background);
     let description_html=converter.makeHtml(data.currentData.problem.description);
     let inputFormat_html=converter.makeHtml(data.currentData.problem.inputFormat);
     let outputFormat_html=converter.makeHtml(data.currentData.problem.outputFormat);
     let hint_html=converter.makeHtml(data.currentData.problem.hint);
-    let preview_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','markdown.css'));
-    let problem_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','problem.css'));
+    
     let min_time_limit=Math.min(...data.currentData.problem.limits.time);
     let max_time_limit=Math.max(...data.currentData.problem.limits.time);
     let min_memory_limit=Math.min(...data.currentData.problem.limits.memory);

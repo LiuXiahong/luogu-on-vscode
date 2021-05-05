@@ -1,9 +1,3 @@
-.MathJax{
-    outline:0;
-}
-a:hover,a:active{
-    text-decoration:none
-}
 img{
     border-radius: 3px;
     outline:0;
@@ -33,12 +27,4 @@ div.problem_information {
     padding: 0.8em;
     text-align: center;
     vertical-align:bottom;
-}
-div.float-button {
-    position: fixed;
-    height: 90px;
-    width: 40px;
-    bottom: 90px;
-    right: 50px;
-    background: #66ccff;
 }
