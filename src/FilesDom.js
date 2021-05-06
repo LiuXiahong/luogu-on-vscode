@@ -4,6 +4,7 @@ const showdown =require('showdown');
 const converter = new showdown.Converter();
 const preview_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','markdown.css'));
 const problem_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','problem.css'));
+const user_style=fs.readFileSync(path.resolve(__dirname,'..','resources','css','user.css'));
 function GetUserTemplate(uid,data) {
     let introduction_html=converter.makeHtml(data.currentData.user.introduction)
     return `
@@ -27,15 +28,15 @@ function GetUserTemplate(uid,data) {
             ${preview_style}
         </style>
         <style>
-            ${problem_style}
+            ${user_style}
         </style>
     </head>
 
     <body>
-        <div id="background">
-            <img src="${data.currentData.user.background}"
+        <div class="background">
+            <img src="${data.currentData.user.background}" class="background_img">
         </div>
-        <div id="introduction">
+        <div class="introduction">
             ${introduction_html}
         </div>
     </body>
@@ -100,6 +101,8 @@ function GetProblemTemplate(pid,data) {
                 ${min_memory_limit==max_memory_limit?`${min_memory_limit/1024}MB`:`${min_memory_limit/1024}MB~${max_memory_limit/1024}MB`}
             </div>
         </div>
+        <br/> 
+        <hr/>
         <br/>
         <div class="wantsTranslation">
             ${data.currentData.problem.wantsTranslation?`<blockquote><p><strong>本题征求翻译。</strong>如果您能提供翻译或者题意简述，请<a href="https://www.luogu.com.cn/problem/${pid}#translate">提交翻译</a>，感谢您的贡献。</p></blockquote>`:``}

@@ -111,12 +111,8 @@ img {
 	max-height: 100%;
 }
 
-a {
+a,a:hover,a:active {
 	text-decoration: none;
-}
-
-a:hover,a:active {
-	text-decoration: underline;
 }
 
 a:focus,
@@ -247,4 +243,13 @@ div.float-button {
     bottom: 50px;
     right: 50px;
     background: #66ccff;
+}
+hr{
+	border-bottom:1px solid;
+}
+img{
+    border-radius: 3px;
+    outline:0;
+    max-width:  478px;
+    max-height: 360px;
 }
