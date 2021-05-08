@@ -36,9 +36,13 @@ function GetUserTemplate(uid,data) {
         <div class="background">
             <img src="${data.currentData.user.background}" class="background_img">
         </div>
-        <div class="introduction">
+        <br>
+        <div class="layout">
+            <div class="introduction">
             ${introduction_html}
+            </div>
         </div>
+        
     </body>
 
     </html>
@@ -147,7 +151,7 @@ function GetProblemTemplate(pid,data) {
             </div>
         </div>
         <br/>
-        <div class="float-button"></div>
+        <!-- <div class="float-button"></div> -->
     </body>
 
     </html>

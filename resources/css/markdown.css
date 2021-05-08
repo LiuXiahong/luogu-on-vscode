@@ -236,6 +236,14 @@ pre code {
     outline:0;
 }
 
+div.layout{
+    box-shadow: 0 10px 15px rgba(50, 50, 93, 0.1),0 10px 8px rgba(0,0,0,.07);
+    border-radius: 3px;
+    /* border: 1px solid var(--vscode-textSeparator-foreground); */
+    background: rgba(255, 255, 255, 0.06);
+    padding: 15px;
+}
+
 div.float-button {
     position: fixed;
     height: 70px;
