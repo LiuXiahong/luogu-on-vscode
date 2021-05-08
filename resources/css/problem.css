@@ -27,3 +27,15 @@ div.problem_information {
     text-align: center;
     vertical-align:bottom;
 }
+
+div#card.layout,div#recommendations.layout{
+    display: inline-block;
+    vertical-align:top;
+    width: 41%;
+}
+/* div#card.layout{
+    margin-right: 5px;
+} */
+/* div#recommendations.layout{
+    position: absolute;
+} */

@@ -94,7 +94,8 @@ function GetProblemTemplate(pid,data) {
                 ${data.currentData.problem.totalSubmit}
             </div>
             <div class="problem_information">
-                通过<br />${data.currentData.problem.totalAccepted}
+                通过<br />
+                ${data.currentData.problem.totalAccepted}
             </div>
             <div class="problem_information">
                 时间限制<br />
@@ -110,7 +111,21 @@ function GetProblemTemplate(pid,data) {
             ${data.currentData.problem.wantsTranslation?`<blockquote><p><strong>本题征求翻译。</strong>如果您能提供翻译或者题意简述，请<a href="https://www.luogu.com.cn/problem/${pid}#translate">提交翻译</a>，感谢您的贡献。</p></blockquote>`:``}
         </div>
         <br/>
-        <div class="layout">
+        <div class="layout" id="card">
+            null
+        </div>
+        <div class="layout" id="recommendations">
+            <h2>推荐题目</h2>
+            <ul>
+                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[0].pid}">${data.currentData.recommendations[0].pid+` `+data.currentData.recommendations[0].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[1].pid}">${data.currentData.recommendations[1].pid+` `+data.currentData.recommendations[1].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[2].pid}">${data.currentData.recommendations[2].pid+` `+data.currentData.recommendations[2].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[3].pid}">${data.currentData.recommendations[3].pid+` `+data.currentData.recommendations[3].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[4].pid}">${data.currentData.recommendations[4].pid+` `+data.currentData.recommendations[4].title}</a></li>
+            </ul>
+        </div>
+        <br/>
+        <div class="layout" id="problem">
             <div id="background">
                 <br />
                 <h2><strong>题目背景</strong></h2>
