@@ -28,14 +28,14 @@ div.problem_information {
     vertical-align:bottom;
 }
 
-div#card.layout,div#recommendations.layout{
+div#discussions.layout,div#recommendations.layout{
     display: inline-block;
     vertical-align:top;
     width: 41%;
 }
-/* div#card.layout{
-    margin-right: 5px;
-} */
-/* div#recommendations.layout{
-    position: absolute;
-} */
+div#discussions.layout{
+    float:left;
+}
+div#recommendations.layout{
+    float:right;
+}
