@@ -22,7 +22,7 @@ div.problem_information {
     height: 35px;
     display: inline-block;
     border-left: 1px solid;
-    border-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(0, 0, 0, 0.18);
     padding: 0.8em;
     text-align: center;
     vertical-align:bottom;
@@ -33,9 +33,9 @@ div#discussions.layout,div#recommendations.layout{
     vertical-align:top;
     width: 41%;
 }
-div#discussions.layout{
+/* div#discussions.layout{
     float:left;
-}
+} */
 div#recommendations.layout{
     float:right;
 }

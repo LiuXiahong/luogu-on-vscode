@@ -261,3 +261,7 @@ img{
     max-width:  478px;
     max-height: 360px;
 }
+ul{
+	list-style: none;
+	right:10px;
+}

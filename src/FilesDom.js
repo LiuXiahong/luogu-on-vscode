@@ -114,11 +114,11 @@ function GetProblemTemplate(pid,data) {
         <div class="layout" id="discussions">
             <h2>相关讨论</h2>
             <ul>
-                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[0].pid}">${data.currentData.recommendations[0].pid+` `+data.currentData.recommendations[0].title}</a></li>
-                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[1].pid}">${data.currentData.recommendations[1].pid+` `+data.currentData.recommendations[1].title}</a></li>
-                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[2].pid}">${data.currentData.recommendations[2].pid+` `+data.currentData.recommendations[2].title}</a></li>
-                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[3].pid}">${data.currentData.recommendations[3].pid+` `+data.currentData.recommendations[3].title}</a></li>
-                <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[4].pid}">${data.currentData.recommendations[4].pid+` `+data.currentData.recommendations[4].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/discuss/show/${data.currentData.discussions[0].id}">${data.currentData.discussions[0].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/discuss/show/${data.currentData.discussions[1].id}">${data.currentData.discussions[1].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/discuss/show/${data.currentData.discussions[2].id}">${data.currentData.discussions[2].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/discuss/show/${data.currentData.discussions[3].id}">${data.currentData.discussions[3].title}</a></li>
+                <li><a href="https://www.luogu.com.cn/discuss/show/${data.currentData.discussions[4].id}">${data.currentData.discussions[4].title}</a></li>
             </ul>
         </div>
         <div class="layout" id="recommendations">
@@ -133,16 +133,7 @@ function GetProblemTemplate(pid,data) {
         </div>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        
         <div class="layout" id="problem">
             <div id="background">
                 <br />
