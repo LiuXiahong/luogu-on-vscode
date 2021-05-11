@@ -33,11 +33,12 @@ function GetUserTemplate(uid,data) {
     </head>
 
     <body>
-        <div class="background">
-            <img src="${data.currentData.user.background}" class="background_img">
+        <div class="user_header" style="background-image:url(${data.currentData.user.background}) ;">
+            <img id="avatar"src="https://cdn.luogu.com.cn/upload/usericon/${uid}.png">
         </div>
         <br>
         <div class="layout">
+            <h2>个人介绍</h2>
             <div class="introduction">
             ${introduction_html}
             </div>

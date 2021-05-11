@@ -114,7 +114,11 @@ img {
 a,a:hover,a:active {
 	text-decoration: none;
 }
-
+.vscode-light a,
+.vscode-light a:hover,
+.vscode-light a:active{
+	color: #5e72e4 !important;
+}
 a:focus,
 input:focus,
 select:focus,
@@ -238,7 +242,7 @@ pre code {
 
 div.layout{
     box-shadow: 0 10px 15px rgba(50, 50, 93, 0.1),0 10px 8px rgba(0,0,0,.07);
-    border-radius: 3px;
+    border-radius: 5px;
     /* border: 1px solid var(--vscode-textSeparator-foreground); */
     background: rgba(255, 255, 255, 0.06);
     padding: 15px;
@@ -258,10 +262,11 @@ hr{
 img{
     border-radius: 3px;
     outline:0;
-    max-width:  478px;
-    max-height: 360px;
 }
 ul{
 	list-style: none;
-	right:10px;
+	padding:0;
+}
+li{
+	margin-bottom: .5em;
 }

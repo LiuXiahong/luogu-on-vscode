@@ -1,4 +1,15 @@
-img.background_img {
-	/* border-radius:10px 10px 0px 0px */
-	border-radius:10px
+img#avatar{
+	position: absolute;
+	bottom: 24px;
+	left: 24px;
+	border: 1px solid #979797;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+div.user_header{
+	position: relative;
+	height: 240px;
+	background-size: cover;
+	background-position: center;
 }
