@@ -21,7 +21,7 @@ function GetUserTemplate(uid,data) {
                 processEscapes: true
                 }
                 });
-            </script>
+        </script>
         <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
         <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
         <style>
@@ -33,9 +33,25 @@ function GetUserTemplate(uid,data) {
     </head>
 
     <body>
-        <div class="user_header" style="background-image:url(${data.currentData.user.background}) ;">
+        <div class="layout" style="padding:0">
+        <div id="user_header" style="background-image:url(${data.currentData.user.background}) ;">
             <img id="avatar"src="https://cdn.luogu.com.cn/upload/usericon/${uid}.png">
+            <div class="user_info">
+                <div class="user_name">
+                    ${data.currentData.user.name}
+                </div>
+                <div class="user_slogan">
+                    ${data.currentData.user.slogan}
+                </div>
+               
+            </div>
+             
         </div>
+        <div class="user_start_data">
+
+            </div>
+        </div>
+        
         <br>
         <div class="layout">
             <h2>个人介绍</h2>
@@ -43,7 +59,7 @@ function GetUserTemplate(uid,data) {
             ${introduction_html}
             </div>
         </div>
-        
+        <br/>
     </body>
 
     </html>
@@ -75,7 +91,7 @@ function GetProblemTemplate(pid,data) {
                     processEscapes: true
                     }
                     });
-                </script>
+        </script>
         <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
         <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
         <style>
@@ -113,7 +129,8 @@ function GetProblemTemplate(pid,data) {
         </div>
         <br/>
         <div class="layout" id="discussions">
-            <h2>相关讨论</h2>
+            <a href="https://www.luogu.com.cn/discuss/lists?forumname=${pid}" style="float:right">进入讨论版</a>
+            <h2 style="margin-bottom: 10px;">相关讨论</h2>
             <ul>
                 <li><a href="https://www.luogu.com.cn/discuss/show/${data.currentData.discussions[0].id}">${data.currentData.discussions[0].title}</a></li>
                 <li><a href="https://www.luogu.com.cn/discuss/show/${data.currentData.discussions[1].id}">${data.currentData.discussions[1].title}</a></li>
@@ -123,7 +140,7 @@ function GetProblemTemplate(pid,data) {
             </ul>
         </div>
         <div class="layout" id="recommendations">
-            <h2>推荐题目</h2>
+            <h2 style="margin-bottom: 10px;">推荐题目</h2>
             <ul>
                 <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[0].pid}">${data.currentData.recommendations[0].pid+` `+data.currentData.recommendations[0].title}</a></li>
                 <li><a href="https://www.luogu.com.cn/problem/${data.currentData.recommendations[1].pid}">${data.currentData.recommendations[1].pid+` `+data.currentData.recommendations[1].title}</a></li>

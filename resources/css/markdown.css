@@ -239,7 +239,9 @@ pre code {
 .MathJax{
     outline:0;
 }
-
+*::selection{
+	background-color: #cce2ff;
+}
 div.layout{
     box-shadow: 0 10px 15px rgba(50, 50, 93, 0.1),0 10px 8px rgba(0,0,0,.07);
     border-radius: 5px;

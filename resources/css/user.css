@@ -7,9 +7,23 @@ img#avatar{
 	height: 64px;
 	border-radius: 50%;
 }
-div.user_header{
+div#user_header{
 	position: relative;
 	height: 240px;
 	background-size: cover;
 	background-position: center;
+}
+div.user_info{
+	color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 96px;
+    text-shadow: 1px 1px 3px #333;
+}
+div.user_name{
+	font-size: 1.9em;
+    margin-bottom: 4px;
+}
+div.user_start_data{
+	height: 50px;
 }
