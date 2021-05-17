@@ -47,9 +47,25 @@ function GetUserTemplate(uid,data) {
             </div>
              
         </div>
-        <div class="user_start_data">
-
-            </div>
+        <div class="user_data">
+                <div class="user_data_block">
+                    关注<br/>
+                    ${data.currentData.user.followingCount}
+                </div>
+                <div class="user_data_block">
+                    粉丝<br/>
+                    ${data.currentData.user.followerCount}
+                </div>
+                <div class="user_data_block">
+                    提交<br/>
+                    ${data.currentData.user.followerCount}
+                </div>
+                <div class="user_data_block">
+                </div>
+                <div class="user_data_block">
+                </div>
+                
+        </div>
         </div>
         
         <br>

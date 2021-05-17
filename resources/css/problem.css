@@ -13,13 +13,13 @@ pre.inputFormat{
 div.information>.problem_information:first-child{
     border-left: none;
 }
-
+/* 
 div.information{
     height: 45px;
-}
+} */
 
 div.problem_information {
-    height: 35px;
+    /* height: 35px; */
     display: inline-block;
     border-left: 1px solid;
     padding: 0.8em;
